@@ -2,7 +2,7 @@
 
 ## Overview
 
-Personal website of Alena Tikhomirova, a Frontend developer
+Personal website of Alena Tikhomirova, a Frontend developer.
 
 ## Features
 
