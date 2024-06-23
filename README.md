@@ -1,8 +1,35 @@
-# React + Vite
+# Movie Watchlist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Personal website of Alena Tikhomirova, a Frontend developer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Feature:** description.
+
+## Usage
+
+This is how to use this project.
+
+## Technologies Used
+
+- React
+- Vite
+- HTML
+- CSS
+- JavaScript
+- Font Awesome CDN
+
+## Contributors
+
+- Alena Tikhomirova
+
+## Contribution
+
+If you have ideas to enhance this project or encounter any issues, feel free to contribute by opening an issue or submitting a pull request. Your input is highly valued!
+
+## Contact
+For inquiries or feedback, please contact me at alyonatihomirova9@gmail.com.
+
+## Acknowledgments
