@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer,
+.main-section {
+  display: flex;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
