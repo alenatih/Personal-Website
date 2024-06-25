@@ -18,7 +18,9 @@
 
 .header,
 .footer,
-.main-section {
+.about-me,
+.portfolio,
+.skills {
   display: flex;
 }
 
