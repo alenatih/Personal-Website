@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "/index.html",
+    "./index.html",
     "./src/main.tsx",
-    "./src/app.txs",
+    "./src/app.tsx",
     "./src/components/Header.tsx",
     "./src/components/AboutMe.tsx",
     "./src/components/Portfolio.tsx",
