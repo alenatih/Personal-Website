@@ -10,7 +10,7 @@ import "./App.css"
 
 function App() {
   return (
-    <div className="app-container bg-blue-400 h-screen w-screen">
+    <div className="app-container bg-blue-400">
       <Header />
       <AboutMe />
       <Portfolio />
