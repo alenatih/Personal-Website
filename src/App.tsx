@@ -1,11 +1,11 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
 // import reactLogo from "./assets/react.svg"
 // import viteLogo from "/vite.svg"
-import Header from "./components/Header.jsx"
-import AboutMe from "./components/AboutMe.jsx"
-import Portfolio from "./components/Portfolio.jsx"
-import Skills from "./components/Skills.jsx"
-import Footer from "./components/Footer.jsx"
+import Header from "./components/Header.tsx"
+import AboutMe from "./components/AboutMe.tsx"
+import Portfolio from "./components/Portfolio.tsx"
+import Skills from "./components/Skills.tsx"
+import Footer from "./components/Footer.tsx"
 import "./App.css"
 
 function App() {
