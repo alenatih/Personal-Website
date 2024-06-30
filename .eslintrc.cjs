@@ -15,4 +15,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }

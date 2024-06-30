@@ -14,5 +14,8 @@ export default {
     extend: {},
   },
   plugins: [],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
 
