@@ -8,7 +8,7 @@ import "./App.css"
 
 function App() {
   return (
-    <div className="app-container text-gray-900 bg-blue-400 h-screen w-screen p-10">
+    <div className="app-container flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10">
       <Header />
       <AboutMe />
       <Portfolio />
