@@ -2,9 +2,9 @@
 
 function AboutMe() {
     return (
-        <main className="about-me">
+        <div className="about-me">
             About me
-        </main>
+        </div>
     )
 }
 
