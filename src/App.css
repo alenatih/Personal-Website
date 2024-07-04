@@ -23,8 +23,11 @@
 /* Layout */
 
 .app-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scrolling */
+  padding: 2.5rem;
 }
 
 /* Buttons */
