@@ -30,21 +30,3 @@ function App() {
 }
 
 export default App
-
-
-<Routes>
-          <Route path={ROUTE.home} element={<Home />} />
-          <Route path={ROUTE.about} element={<About />} />
-          <Route path={ROUTE.skills} element={<Skills />} />
-          <Route path={ROUTE.experience} element={<Experience />} />
-          <Route path={ROUTE.portfolio}>
-            <Route index element={<Portfolio />} />
-            <Route path=":project" element={<Project />} />
-          </Route>
-          <Route path={ROUTE.vlog}>
-            <Route index element={<Vlog />} />
-            <Route path=":video" element={<Video />} />
-          </Route>
-          <Route path={ROUTE.contact} element={<Contact />} />
-          <Route path="*" element={<Navigate replace to={ROUTE.home} />} />
-        </Routes>
