@@ -11,9 +11,9 @@ import "./App.css"
 function App() {
 
   const ROUTE = {
-    aboutMe: "/components/AboutMe",
-    portfolio: "/components/Portfolio",
-    skills: "/components/Skills",
+    aboutMe: "./components/AboutMe",
+    portfolio: "./components/Portfolio",
+    skills: "./components/Skills",
   }
 
   return (
