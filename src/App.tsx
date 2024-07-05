@@ -1,4 +1,5 @@
 // import React, { useState } from "react"
+import {Routes, Route, Navigate, useLocation} from "react-router-dom"
 import Header from "./components/Header.tsx"
 import AboutMe from "./components/AboutMe.tsx"
 import Portfolio from "./components/Portfolio.tsx"
@@ -7,16 +8,43 @@ import Footer from "./components/Footer.tsx"
 import "./App.css"
 
 function App() {
+
+  const ROUTE = {
+    aboutMe: "/aboutMe",
+    portfolio: "/portfolio",
+    skills: "/skills",
+  }
+
   return (
     <div className="app-container">
-      {/* flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10 */}
       <Header />
-      <AboutMe />
-      <Portfolio />
-      <Skills />
+      {/* flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10 */}
+      <Routes>
+        <Route path={ROUTE.aboutMe} element={<AboutMe />} />
+        <Route path={ROUTE.portfolio} element={<Portfolio />} />
+        <Route path={ROUTE.skills} element={<Skills />} />
+      </Routes>
       <Footer />
     </div>
   )
 }
 
 export default App
+
+
+<Routes>
+          <Route path={ROUTE.home} element={<Home />} />
+          <Route path={ROUTE.about} element={<About />} />
+          <Route path={ROUTE.skills} element={<Skills />} />
+          <Route path={ROUTE.experience} element={<Experience />} />
+          <Route path={ROUTE.portfolio}>
+            <Route index element={<Portfolio />} />
+            <Route path=":project" element={<Project />} />
+          </Route>
+          <Route path={ROUTE.vlog}>
+            <Route index element={<Vlog />} />
+            <Route path=":video" element={<Video />} />
+          </Route>
+          <Route path={ROUTE.contact} element={<Contact />} />
+          <Route path="*" element={<Navigate replace to={ROUTE.home} />} />
+        </Routes>
