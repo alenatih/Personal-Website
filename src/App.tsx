@@ -18,8 +18,8 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header />
       {/* flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10 */}
+      <Header />
       <Routes>
         <Route path={ROUTE.aboutMe} element={<AboutMe />} />
         <Route path={ROUTE.portfolio} element={<Portfolio />} />
