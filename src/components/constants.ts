@@ -3,3 +3,9 @@ export const ROUTE = {
     portfolio: "./Portfolio.tsx",
     skills: "./Skills.tsx",
   }
+
+//   export const ROUTE = {
+//     aboutMe: "./about-me",
+//     portfolio: "./portfolio",
+//     skills: "./skills",
+//   }
