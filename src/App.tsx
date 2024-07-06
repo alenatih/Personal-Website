@@ -6,15 +6,16 @@ import AboutMe from "./components/AboutMe.tsx"
 import Portfolio from "./components/Portfolio.tsx"
 import Skills from "./components/Skills.tsx"
 import Footer from "./components/Footer.tsx"
+import {ROUTE} from "./components/constants.ts"
 import "./App.css"
 
 function App() {
 
-  const ROUTE = {
-    aboutMe: "./components/AboutMe",
-    portfolio: "./components/Portfolio",
-    skills: "./components/Skills",
-  }
+  // const ROUTE = { from constants.ts
+  //   aboutMe: "./components/AboutMe",
+  //   portfolio: "./components/Portfolio",
+  //   skills: "./components/Skills",
+  // }
 
   return (
     <div className="app-container">

@@ -1,8 +1,15 @@
 // import React from "react"
+import {useRef} from "react"
+import {ROUTE} from "./constants.ts"
 
 function Portfolio() {
+    const sectionRef = useRef<HTMLElement>(null)
+
     return (
-        <div className="portfolio">
+        <div className="portfolio"
+            ref={sectionRef}
+            prevTo={ROUTE.aboutMe}
+            nextTo={ROUTE.skills}>
             Portfolio
         </div>
     )
