@@ -1,6 +1,14 @@
 // import React, { useState } from "react"
 // import { Routes, Route } from "react-router-dom"
 // import {Routes, Route, Navigate, useLocation} from "react-router-dom"
+
+// import {
+//   createBrowserRouter, 
+//   createRoutesFromElements,
+//   Route, 
+//   RouterProvider
+// } from "react-router-dom"
+
 import Header from "./components/Header.tsx"
 import AboutMe from "./components/AboutMe.tsx"
 import Portfolio from "./components/Portfolio.tsx"
