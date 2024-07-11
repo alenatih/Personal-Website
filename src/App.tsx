@@ -12,13 +12,16 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
 //   RouterProvider
 // } from "react-router-dom"
 
-// pages
 // import Header from "./components/Header.tsx"
+// pages
 import AboutMe from "./components/AboutMe.tsx"
 import Portfolio from "./components/Portfolio.tsx"
 import Skills from "./components/Skills.tsx"
+
 import Footer from "./components/Footer.tsx"
+
 // import { ROUTE } from "./components/constants.ts"
+
 import "./App.css"
 
 function App() {
@@ -28,14 +31,14 @@ function App() {
         {/* Tailwind CSS classes: flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10 */}
         {/* <Header /> */}
         <header>
-          <nav>
+          <nav className="nav">
             <NavLink to="/aboutMe">About Me</NavLink>
             <NavLink to="/portfolio">Portfolio</NavLink>
             <NavLink to="/skills">Skills</NavLink>
           </nav>
         </header>
 
-        <main>
+        <main className="main">
           <Routes>
             <Route index path="/aboutMe" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
@@ -51,7 +54,7 @@ function App() {
 
         <Footer />
       </div>
-      </BrowserRouter>
+    </BrowserRouter>
   )
 }
 

@@ -30,6 +30,26 @@
   padding: 2.5rem;
 }
 
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.nav a.active {
+  color: whitesmoke;
+  background-color: cornflowerblue;
+}
+
+.main {
+  padding: 2.5rem;
+}
+
 /* Buttons */
 
 
