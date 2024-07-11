@@ -1,5 +1,6 @@
   export const ROUTE = {
-    aboutMe: "./about-me",
-    portfolio: "./portfolio",
-    skills: "./skills",
+    home: "/",
+    aboutMe: "/aboutme",
+    portfolio: "/portfolio",
+    skills: "/skills",
   }
