@@ -24,25 +24,25 @@ import RootLayout from "./components/RootLayout.tsx"
 
 import Footer from "./components/Footer.tsx"
 
-// import { ROUTE } from "./components/constants.ts"
+import { ROUTE } from "./components/constants.ts"
 
 import "./App.css"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    // <Route path="/" element={<RootLayout />} >
+    //   <Route index element={<Home />} />
+    //   <Route path="/aboutme" element={<AboutMe />} />
+    //   <Route path="/portfolio" element={<Portfolio />} />
+    //   <Route path="/skills" element={<Skills />} />
+    // </Route>
+
     <Route path="/" element={<RootLayout />} >
       <Route index element={<Home />} />
-      <Route path="/aboutme" element={<AboutMe />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/skills" element={<Skills />} />
+      <Route path={ROUTE.aboutMe} element={<AboutMe />} />
+      <Route path={ROUTE.portfolio} element={<Portfolio />} />
+      <Route path={ROUTE.skills} element={<Skills />} />
     </Route>
-
-    /* <Route path="/" element={<RootLayout />} >
-          <Route index element={<Home />} />
-          <Route path={ROUTE.aboutMe} element={<AboutMe />} />
-          <Route path={ROUTE.portfolio} element={<Portfolio />} />
-          <Route path={ROUTE.skills} element={<Skills />} />
-        </Route> */
   )
 )
 
