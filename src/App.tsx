@@ -18,6 +18,7 @@ import AboutMe from "./components/AboutMe.tsx"
 import Portfolio from "./components/Portfolio.tsx"
 import Skills from "./components/Skills.tsx"
 
+// layouts
 import RootLayout from "./components/RootLayout.tsx"
 
 import Footer from "./components/Footer.tsx"
@@ -29,10 +30,16 @@ import "./App.css"
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />} >
-      <Route index path="/aboutMe" element={<AboutMe />} />
+      <Route index element={<AboutMe />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/skills" element={<Skills />} />
     </Route>
+
+    /* <Route path="/">
+          <Route index path={ROUTE.aboutMe} element={<AboutMe />} />
+          <Route path={ROUTE.portfolio} element={<Portfolio />} />
+          <Route path={ROUTE.skills} element={<Skills />} />
+        </Route> */
   )
 )
 
@@ -40,18 +47,10 @@ function App() {
   return (
       <div className="app-container">
         {/* Tailwind CSS classes: flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10 */}
-        
+
         {/* <Header /> */}
 
-        <main className="main">
           <RouterProvider router={router}/>
-        </main>
-
-        {/* <Routes>
-          <Route path={ROUTE.aboutMe} element={<AboutMe />} />
-          <Route path={ROUTE.portfolio} element={<Portfolio />} />
-          <Route path={ROUTE.skills} element={<Skills />} />
-        </Routes> */}
 
         <Footer />
       </div>
