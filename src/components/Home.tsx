@@ -1,12 +1,13 @@
 // import React from "react"
 
-function AboutMe() {
+function Home() {
 
     return (
         <div className="about-me">
-            About me
+            Home
         </div>
     )
 }
 
-export default AboutMe
+export default Home
+

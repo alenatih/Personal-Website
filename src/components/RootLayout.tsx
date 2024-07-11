@@ -5,9 +5,10 @@ function RootLayout() {
         <div className="root-layout">
             <header>
                 <nav className="nav">
-                    <NavLink to="/">About Me</NavLink>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
-                    <NavLink to="/skills">Skills</NavLink>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="aboutMe">AboutMe</NavLink>
+                    <NavLink to="portfolio">Portfolio</NavLink>
+                    <NavLink to="skills">Skills</NavLink>
                 </nav>
             </header>
             <main className="main">
