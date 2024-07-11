@@ -32,7 +32,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />} >
       <Route index element={<Home />} />
-      <Route path="aboutMe" element={<AboutMe />} />
+      <Route path="aboutme" element={<AboutMe />} />
       <Route path="portfolio" element={<Portfolio />} />
       <Route path="skills" element={<Skills />} />
     </Route>
