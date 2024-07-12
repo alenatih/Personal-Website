@@ -36,8 +36,8 @@ const router = createBrowserRouter(
     //   <Route index element={<Home />} />
     //   <Route path="/aboutme" element={<AboutMe />} />
     //   <Route path="/portfolio" element={<PortfolioLayout />}>
-    //     <Route path="project-one" element={<ProjectOne />} />
-    //     <Route path="project-two" element={<ProjectTwo />} />
+    //     <Route path="projectone" element={<ProjectOne />} />
+    //     <Route path="projecttwo" element={<ProjectTwo />} />
     //   </Route>
     //   <Route path="/skills" element={<Skills />} />
     // </Route>
@@ -46,8 +46,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path={ROUTE.aboutMe} element={<AboutMe />} />
       <Route path={ROUTE.portfolio} element={<PortfolioLayout />}>
-        <Route path="project-one" element={<ProjectOne />} />
-        <Route path="project-two" element={<ProjectTwo />} />
+        <Route path="projectone" element={<ProjectOne />} />
+        <Route path="projecttwo" element={<ProjectTwo />} />
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
     </Route>

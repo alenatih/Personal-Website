@@ -7,8 +7,8 @@ function PortfolioLayout() {
             Portfolio
 
             <nav>
-                <NavLink to="project-one">Project 1</NavLink>
-                <NavLink to="project-two">Project 2</NavLink>
+                <NavLink to="projectone">Project 1</NavLink>
+                <NavLink to="projecttwo">Project 2</NavLink>
             </nav>
 
             <Outlet />
