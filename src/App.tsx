@@ -21,8 +21,8 @@ import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Skills from "./components/Skills.tsx"
 
 // layouts
-import RootLayout from "./components/RootLayout.tsx"
-import PortfolioLayout from "./components/portfolio/PortfolioLayout.tsx"
+import RootLayout from "./layouts/RootLayout.tsx"
+import PortfolioLayout from "./layouts/PortfolioLayout.tsx"
 
 import Footer from "./components/Footer.tsx"
 
