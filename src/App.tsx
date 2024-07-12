@@ -19,6 +19,7 @@ import AboutMe from "./components/AboutMe.tsx"
 import ProjectOne from "./components/portfolio/ProjectOne.tsx"
 import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Skills from "./components/Skills.tsx"
+import NotFound from "./components/NotFound.tsx"
 
 // layouts
 import RootLayout from "./layouts/RootLayout.tsx"
@@ -40,6 +41,8 @@ const router = createBrowserRouter(
     //     <Route path="projecttwo" element={<ProjectTwo />} />
     //   </Route>
     //   <Route path="/skills" element={<Skills />} />
+
+    //   <Route path="*" element={<NotFound />} />
     // </Route>
 
     <Route path="/" element={<RootLayout />} >
@@ -50,6 +53,8 @@ const router = createBrowserRouter(
         <Route path="projecttwo" element={<ProjectTwo />} />
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
+
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 )
