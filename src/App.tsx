@@ -16,11 +16,13 @@ import {
 // pages
 import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
-import PortfolioLayout from "./components/portfolio/PortfolioLayout.tsx"
+import ProjectOne from "./components/portfolio/ProjectOne.tsx"
+import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Skills from "./components/Skills.tsx"
 
 // layouts
 import RootLayout from "./components/RootLayout.tsx"
+import PortfolioLayout from "./components/portfolio/PortfolioLayout.tsx"
 
 import Footer from "./components/Footer.tsx"
 
