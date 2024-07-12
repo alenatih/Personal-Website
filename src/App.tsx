@@ -16,7 +16,7 @@ import {
 // pages
 import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
-import Portfolio from "./components/Portfolio.tsx"
+import PortfolioLayout from "./components/portfolio/PortfolioLayout.tsx"
 import Skills from "./components/Skills.tsx"
 
 // layouts
@@ -40,7 +40,10 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />} >
       <Route index element={<Home />} />
       <Route path={ROUTE.aboutMe} element={<AboutMe />} />
-      <Route path={ROUTE.portfolio} element={<Portfolio />} />
+      <Route path={ROUTE.portfolio} element={<PortfolioLayout />}>
+        <Route path="project-one" element={<ProjectOne />} />
+        <Route path="project-two" element={<ProjectTwo />} />
+      </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
     </Route>
   )
