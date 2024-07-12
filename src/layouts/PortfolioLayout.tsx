@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom"
 function PortfolioLayout() {
 
     return (
-        <div className="portfolio">
+        <div className="portfolio-layout">
             Portfolio
 
             <nav>
