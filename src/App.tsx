@@ -16,6 +16,7 @@ import {
 // pages
 import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
+// import Portfolio, { projectsLoader } from "./components/portfolio/Portfolio.tsx"
 import ProjectOne from "./components/portfolio/ProjectOne.tsx"
 import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Skills from "./components/Skills.tsx"
@@ -51,6 +52,7 @@ const router = createBrowserRouter(
       <Route path={ROUTE.portfolio} element={<PortfolioLayout />}>
         <Route path="projectone" element={<ProjectOne />} />
         <Route path="projecttwo" element={<ProjectTwo />} />
+        {/* <Route index element={<Portfolio />} loader={projectsLoader} /> */}
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
 
