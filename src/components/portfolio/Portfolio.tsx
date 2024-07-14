@@ -1,11 +1,11 @@
 import { NavLink, useLoaderData } from "react-router-dom"
 
 function Portfolio() {
-    const projects = useLoaderData()
+    const projects:any = useLoaderData()
 
     return (
         <div className="portfolio">
-            {projects.map(project => (
+            {projects.map((project:any) => (
                 <NavLink to={project.id.toString()} key={project.id}>
                     <h4>{project.title}</h4>
                     <p>{project.description}</p>

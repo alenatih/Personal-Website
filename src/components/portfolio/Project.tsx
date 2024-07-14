@@ -2,7 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom"
 
 function Project() {
     const { id } = useParams()
-    const projectInfo = useLoaderData()
+    const projectInfo:any = useLoaderData()
 
     return (
         <div className="project">

@@ -41,6 +41,15 @@ const router = createBrowserRouter(
     //   <Route path="/portfolio" element={<PortfolioLayout />}>
     //     <Route path="projectone" element={<ProjectOne />} />
     //     <Route path="projecttwo" element={<ProjectTwo />} />
+    //     <Route
+    //       index
+    //       element={<Portfolio />}
+    //       loader={projectsLoader} />
+    //     <Route
+    //       path=":id"
+    //       element={<Project />}
+    //       loader={projectInfoLoader}
+    //     />
     //   </Route>
     //   <Route path="/skills" element={<Skills />} />
 
