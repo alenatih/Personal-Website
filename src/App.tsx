@@ -19,6 +19,7 @@ import AboutMe from "./components/AboutMe.tsx"
 import Portfolio, { projectsLoader } from "./components/portfolio/Portfolio.tsx"
 import ProjectOne from "./components/portfolio/ProjectOne.tsx"
 import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
+import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
 import Skills from "./components/Skills.tsx"
 import NotFound from "./components/NotFound.tsx"
 
@@ -50,8 +51,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path={ROUTE.aboutMe} element={<AboutMe />} />
       <Route path={ROUTE.portfolio} element={<PortfolioLayout />}>
-        <Route path="projectone" element={<ProjectOne />} />
-        <Route path="projecttwo" element={<ProjectTwo />} />
+        {/* <Route path="projectone" element={<ProjectOne />} />
+        <Route path="projecttwo" element={<ProjectTwo />} /> */}
         <Route
           index
           element={<Portfolio />}
