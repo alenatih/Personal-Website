@@ -21,6 +21,7 @@ import ProjectOne from "./components/portfolio/ProjectOne.tsx"
 import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
 import Skills from "./components/Skills.tsx"
+import Contact, { contactAction } from "./components/Contact.tsx"
 import NotFound from "./components/NotFound.tsx"
 import ProjectsError from "./components/portfolio/ProjectsError.tsx"
 
@@ -74,6 +75,7 @@ const router = createBrowserRouter(
         />
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
+      <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
 
       <Route path="*" element={<NotFound />} />
     </Route>

@@ -3,4 +3,5 @@
     aboutMe: "/aboutme",
     portfolio: "/portfolio",
     skills: "/skills",
+    contact: "/contact"
   }
