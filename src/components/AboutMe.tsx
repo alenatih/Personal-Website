@@ -16,7 +16,7 @@ function AboutMe() {
         <div className="about-me">
             About me
 
-            <button onClick={handleClick}>Sign out</button>
+            <button className="about-me-log-button" onClick={handleClick}>Sign out</button>
         </div>
     )
 }

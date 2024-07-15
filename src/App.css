@@ -39,6 +39,14 @@
   padding: 2.5rem;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .project-one,
 .project-two {
   margin-top: 1rem;
@@ -96,6 +104,15 @@
   color: whitesmoke;
   background-color: cornflowerblue;
   padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.about-me-log-button {
+  color: whitesmoke;
+  background-color: cornflowerblue;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 0.5rem;
