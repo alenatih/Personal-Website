@@ -63,7 +63,8 @@
   background-color: cornflowerblue;
 }
 
-.not-found a {
+.not-found a,
+.projects-error a {
   text-decoration: underline;
 }
 

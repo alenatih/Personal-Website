@@ -39,7 +39,7 @@ const router = createBrowserRouter(
     // <Route path="/" element={<RootLayout />} >
     //   <Route index element={<Home />} />
     //   <Route path="/aboutme" element={<AboutMe />} />
-    //   <Route path="/portfolio" element={<PortfolioLayout />}>
+    //   <Route path="/portfolio" element={<PortfolioLayout />} errorElement={<ProjectsError />}>
     //     <Route path="projectone" element={<ProjectOne />} />
     //     <Route path="projecttwo" element={<ProjectTwo />} />
     //     <Route
