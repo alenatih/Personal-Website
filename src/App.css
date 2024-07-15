@@ -44,6 +44,11 @@
   margin-top: 1rem;
 }
 
+.breadcrumbs {
+  max-width: 80%;
+  margin: 1rem auto 0;
+}
+
 .breadcrumbs * {
   display: inline-block;
   margin-right: 0.75rem;
