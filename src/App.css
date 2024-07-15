@@ -85,7 +85,7 @@
 .input-email,
 .input-message {
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1rem;
   border: none;
   border-radius: 0.5rem;
 }
