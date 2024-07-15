@@ -10,17 +10,17 @@ function Contact() {
             <Form className="contact-form" method="post" action="/contact">
                 <label>
                     Your name
-                    <input type="text" name="name" required />
+                    <input className="input-name" type="text" name="name" required />
                 </label>
 
                 <label>
                     Your email
-                    <input type="email" name="email" required />
+                    <input className="input-email" type="email" name="email" required />
                 </label>
 
                 <label>
                     Your message
-                    <textarea name="message" required ></textarea>
+                    <textarea className="input-message" name="message" required ></textarea>
                 </label>
 
                 <button className="form-submit-button">Submit</button>

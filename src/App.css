@@ -63,8 +63,43 @@
   display: none;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 2rem auto;
+}
+
+.contact-form label,
+.input-name,
+.input-email,
+.input-message,
+.form-submit-button {
+  display: block;
+  width: 100%;
+}
+
+.input-name,
+.input-email,
+.input-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
 /* Buttons */
 
+.form-submit-button {
+  color: whitesmoke;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
 
 /* Images */
 
