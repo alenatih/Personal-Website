@@ -1,7 +1,7 @@
 import { Form, redirect, useActionData } from "react-router-dom"
 
 function Contact() {
-    const data = useActionData
+    const data = useActionData()
 
     return (
         <div className="contact">
@@ -51,6 +51,5 @@ export const contactAction = async ({request}:any) => {
     }
 
     // Redirect a user
-
     return redirect("/")
 }
