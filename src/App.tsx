@@ -22,6 +22,7 @@ import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
 import Skills from "./components/Skills.tsx"
 import NotFound from "./components/NotFound.tsx"
+import ProjectsError from "./components/portfolio/ProjectsError.tsx"
 
 // layouts
 import RootLayout from "./layouts/RootLayout.tsx"
@@ -59,7 +60,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />} >
       <Route index element={<Home />} />
       <Route path={ROUTE.aboutMe} element={<AboutMe />} />
-      <Route path={ROUTE.portfolio} element={<PortfolioLayout />}>
+      <Route path={ROUTE.portfolio} element={<PortfolioLayout />} errorElement={<ProjectsError />}>
         <Route path="projectone" element={<ProjectOne />} />
         <Route path="projecttwo" element={<ProjectTwo />} />
         <Route

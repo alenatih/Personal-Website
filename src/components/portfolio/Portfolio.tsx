@@ -19,6 +19,10 @@ function Portfolio() {
 export const projectsLoader = async () => {
     const response = await fetch ("https://jsonplaceholder.typicode.com/posts")
 
+    if (!response.ok) {
+        throw Error("Could not fetch the list of projects.")
+    }
+
     return response.json()
 }
 
