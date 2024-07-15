@@ -54,6 +54,7 @@ const router = createBrowserRouter(
     //     />
     //   </Route>
     //   <Route path="/skills" element={<Skills />} />
+    // <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
 
     //   <Route path="*" element={<NotFound />} />
     // </Route>

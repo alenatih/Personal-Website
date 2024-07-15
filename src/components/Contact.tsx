@@ -7,7 +7,7 @@ function Contact() {
         <div className="contact">
             <h4>Contact me</h4>
 
-            <Form method="post" action="/contact">
+            <Form className="contact-form" method="post" action="/contact">
                 <label>
                     Your name
                     <input type="text" name="name" required />
@@ -47,7 +47,7 @@ export const contactAction = async ({request}:any) => {
     // Send a post request
 
     if (submission.message.length < 10) {
-        return {error: "Could you please write a message longer than 10 characters?"}
+        return {error: "Please write a message longer than 10 characters."}
     }
 
     // Redirect a user
