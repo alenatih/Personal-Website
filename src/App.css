@@ -44,6 +44,20 @@
   margin-top: 1rem;
 }
 
+.breadcrumbs * {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+.breadcrumbs .crumb::after {
+  content: ">";
+  margin-left: 0.75rem;
+}
+
+.breadcrumbs .crumb:last-child::after {
+  display: none;
+}
+
 /* Buttons */
 
 
