@@ -20,6 +20,7 @@ Personal website of Alena Tikhomirova, a Frontend developer.
 - CSS
 - JavaScript
 - TypeScript
+- React Router
 - Tailwind CSS
 - Font Awesome CDN
 
