@@ -16,8 +16,16 @@
   /* font-weight: 400; */
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  /* Dark mode */
+  --text-color-light: rgba(255, 255, 255, 0.87);
+  --background-color-dark: #242424;
+
+  /* Light mode */
+  --text-color-dark: #2A303C;
+  --background-color-light: whitesmoke;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,9 +34,11 @@
 }
 
 
-/* #root, */
+#root,
 html,
 body {
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -39,6 +49,22 @@ body {
   min-height: 100vh;
   min-width: 320px;
 } */
+
+.dark-mode {
+  /* color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  color: var(--text-color-light);
+  background-color: var(--background-color-dark);
+}
+
+.light-mode {
+  /* color: #2A303C;
+  background-color: whitesmoke; */
+
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+}
 
 /* Typography and icons */
 
@@ -57,12 +83,12 @@ body {
 
 /* Media queries */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: whitesmoke;
   }
-}
+} */
 
 /* @media(width >= 600px) */
 @media (min-width: 600px) {

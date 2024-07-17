@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+.toggle-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.toggle {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 80px;
+    /* height: 20px;
+    width: 34px; */
+}
+
+.toggle-text {
+    font-size: 1rem;
+    margin-right: 0.75rem;
+}
+  
+.toggle input {
+    display: none;
+}
+  
+.toggle .slider {
+    background-color: #3F485A;
+    position: absolute;
+    inset: 0;
+    outline: none;
+    border: 1px solid #3F485A;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+  
+.toggle .slider:before {
+    position: absolute;
+    content: "";
+    background-color: whitesmoke;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    left: 1px;
+    bottom: 1px;
+    transition: transform 0.25s ease-in-out 0s;
+}
+  
+.toggle svg {
+    opacity: 0;
+    /* height: 18px;
+    width: 18px; */
+    height: 0;
+    width: 0;
+    stroke-width: 8;
+    position: absolute;
+    z-index: 999;
+    stroke: #0d0d0d;
+    top: 30%;
+    right: 80%;
+    transition: right ease-in-out 0.3s, opacity ease-in-out 0.15s;
+}
+  
+.toggle input:checked + .slider {
+    background-color: #0d0d0d;
+}
+  
+.toggle input:checked + .slider svg {
+    opacity: 1;
+    right: 11%;
+}
+  
+.toggle input:checked + .slider:before {
+    transform: translateX(40px);
+}
+  
