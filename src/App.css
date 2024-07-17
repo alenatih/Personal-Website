@@ -30,9 +30,18 @@
   padding: 2.5rem;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .nav {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
+  width: 100%;
 }
 
 .main {
@@ -143,4 +152,14 @@
 
 /* @media (width >= 600px) */
 @media (min-width: 600px) {
+  /* Typography and icons */
+
+
+  /* Layout */
+
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

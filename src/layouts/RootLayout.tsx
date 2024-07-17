@@ -5,7 +5,7 @@ import ToggleButton from "../components/ToggleButton.tsx"
 function RootLayout() {
     return (
         <div className="root-layout">
-            <header>
+            <header className="header">
                 <nav className="nav">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/aboutme">About Me</NavLink>
