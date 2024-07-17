@@ -90,7 +90,7 @@ function App() {
 
         {/* <Header /> */}
 
-          <RouterProvider router={router}/>
+        <RouterProvider router={router}/>
 
         <Footer />
       </div>
