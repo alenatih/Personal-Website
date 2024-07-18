@@ -28,8 +28,8 @@ function ToggleButton() {
     setIsLightMode(newMode)
     // console.log("clicked", isLightMode)
 
-    sessionStorage.setItem("isLightMode", JSON.stringify(newMode))
     // Save the state to sessionStorage when it changes
+    sessionStorage.setItem("isLightMode", JSON.stringify(newMode))
   }
 
   return (
