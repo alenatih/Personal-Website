@@ -3,7 +3,7 @@ import { useLocation, NavLink } from "react-router-dom"
 function Breadcrumbs() {
     const location = useLocation()
 
-    let currentLink = ""
+    let currentLink:string = ""
 
     const crumbs = location.pathname.split("/")
         .filter(crumb => crumb !== "")
