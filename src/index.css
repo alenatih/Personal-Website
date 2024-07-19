@@ -43,6 +43,13 @@ body {
   margin: 0;
 }
 
+/* #root {
+  text-align: center;
+  max-width: 1280px;
+  padding: 2rem;
+  margin: 0 auto;
+} */
+
 /* body {
   display: flex;
   place-items: center;

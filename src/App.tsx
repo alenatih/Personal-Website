@@ -1,5 +1,3 @@
-// import { useState } from "react"
-
 // The previous method to work with React Router
 // import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
 
