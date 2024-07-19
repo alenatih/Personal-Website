@@ -73,6 +73,7 @@ const router = createBrowserRouter(
         />
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
+      <Route path={ROUTE.blog} element={<Blog />} />
       <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
 
       <Route path="*" element={<NotFound />} />

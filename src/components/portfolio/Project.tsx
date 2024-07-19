@@ -22,7 +22,7 @@ export const projectInfoLoader = async ({params}:any) => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts" + id)
 
     if (!response.ok) {
-        throw Error("Could find this project.")
+        throw Error("Could not find this project.")
     }
 
     return response.json()
