@@ -21,7 +21,7 @@ function AboutMe() {
 
             <h2 className="about-me-title">About me</h2>
 
-            <p>I’m currently taking the Frontend Developer Career Path course on @Scrimba and working towards becoming a Frontend Developer.</p>
+            <p>I’m currently taking the Frontend Developer Career Path course on Scrimba and working towards becoming a Frontend Developer.</p>
             <p>My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, React Router, Firebase, and Figma. Learning React, TypeScript, and Tailwind CSS.</p>
             <p>I love design, UX/UI, books, languages, and AI. I enjoy building web apps, learning and using new technologies.</p>
             <p>I also enjoy doing aerial gymnastics on silks and lyra.</p>
