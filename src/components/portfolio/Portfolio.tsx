@@ -17,7 +17,8 @@ function Portfolio() {
 
 // Data loader
 export const projectsLoader = async () => {
-    const response = await fetch ("https://jsonplaceholder.typicode.com/posts")
+    // const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+    const response = await fetch("http://localhost:4000/projects")
 
     if (!response.ok) {
         throw Error("Could not fetch the list of projects.")
