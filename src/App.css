@@ -12,6 +12,9 @@
 
 /* Typography and icons */
 
+.about-me-title {
+  text-align: center;
+}
 
 /* Layout */
 
@@ -45,9 +48,15 @@
 .about-me {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 1rem;
+}
+
+.about-me-log-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-one,
