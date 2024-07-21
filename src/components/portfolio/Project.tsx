@@ -5,7 +5,7 @@ function Project() {
     const projectInfo:any = useLoaderData()
 
     return (
-        <div className="project">
+        <div className="project" id={id}>
             <h4>{projectInfo.title}</h4>
             <p>{projectInfo.description}</p>
         </div>
