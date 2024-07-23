@@ -9,10 +9,10 @@ import {
   RouterProvider
 } from "react-router-dom"
 
-// import Header from "./components/Header.tsx"
 // pages
 import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
+// import Header from "./components/Header.tsx"
 import Portfolio, { projectsLoader } from "./components/portfolio/Portfolio.tsx"
 import ProjectOne from "./components/portfolio/ProjectOne.tsx"
 import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
