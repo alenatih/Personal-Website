@@ -88,8 +88,6 @@ function App() {
       <div className="app-container">
         {/* Tailwind CSS classes: flex flex-col text-gray-900 bg-blue-400 font-sans h-screen w-screen p-10 */}
 
-        {/* <Header /> */}
-
         <RouterProvider router={router}/>
 
         <Footer />
