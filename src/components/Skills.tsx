@@ -1,7 +1,11 @@
 function Skills() {
     return (
         <div className="skills">
-            Skills
+            <h2 className="skills-title">Skills</h2>
+            <p className="skills-text">
+                My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, React Router, Firebase, and Figma. 
+                Learning React, TypeScript, and Tailwind CSS.
+            </p>
         </div>
     )
 }
