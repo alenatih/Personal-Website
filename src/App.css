@@ -73,6 +73,13 @@
   margin-top: 1rem;
 }
 
+.project {
+  color: whitesmoke;
+  background-color: #3F485A;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
 .breadcrumbs {
   max-width: 80%;
   /* margin: 1rem auto 0; */

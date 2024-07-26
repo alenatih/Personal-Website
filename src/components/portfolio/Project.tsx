@@ -7,8 +7,8 @@ function Project() {
 
     return (
         <div className="project" id={id}>
-            <h4>{projectInfo.title}</h4>
-            <p>{projectInfo.description}</p>
+            <h4>{projectInfo.Title}</h4>
+            <p>{projectInfo.Description}</p>
         </div>
     )
 }
