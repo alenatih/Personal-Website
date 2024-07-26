@@ -36,6 +36,7 @@ export const projectsLoader = async () => {
 
     try {
         const response = await database.listDocuments("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08")
+        // ("databaseId", "collectionId")
         return response.documents
     } catch (error) {
         throw Error("Could not fetch the list of projects.")

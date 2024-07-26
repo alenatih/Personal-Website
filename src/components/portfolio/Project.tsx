@@ -30,6 +30,7 @@ export const projectInfoLoader = async ({params}:any) => {
 
     try {
         const response = await database.getDocument("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08", id)
+        // ("databaseId", "collectionId")
         return response
     } catch (error) {
         throw Error("Could not find this project.")
