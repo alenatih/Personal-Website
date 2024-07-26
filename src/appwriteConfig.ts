@@ -1,6 +1,6 @@
 import { Client, Databases, Account } from "appwrite"
 // Import type models for Appwrite
-import { type Models } from 'appwrite'
+import { type Models } from "appwrite"
 
 export const client: Client = new Client()
 
