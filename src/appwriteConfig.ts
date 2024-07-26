@@ -2,7 +2,7 @@ import { Client, Databases, Account } from "appwrite"
 // Import type models for Appwrite
 import { type Models } from 'appwrite'
 
-const client: Client = new Client()
+export const client: Client = new Client()
 
 client
     .setEndpoint('https://cloud.appwrite.io/v1')
