@@ -6,7 +6,7 @@ export const client: Client = new Client()
 
 client
     .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject('66a2d9bb002ea27689fd') // Replace with your project ID
+    .setProject('66a2d9bb002ea27689fd') // My project ID
 
 export const account: Account = new Account(client)
 export const database: Databases = new Databases(client)
