@@ -17,7 +17,7 @@
 .skills-title,
 .portfolio-title,
 .blog-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .contact-title,
@@ -195,6 +195,14 @@
 /* @media (width >= 600px) */
 @media (min-width: 600px) {
   /* Typography and icons */
+
+  .home-title,
+  .about-me-title,
+  .skills-title,
+  .portfolio-title,
+  .blog-title {
+    font-size: 2rem;
+  }
 
 
   /* Layout */
