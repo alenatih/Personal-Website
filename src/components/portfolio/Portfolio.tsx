@@ -4,7 +4,7 @@ import { database } from "../../appwriteConfig.ts"
 function Portfolio() {
     const projects:any = useLoaderData()
 
-    console.log(projects)
+    // console.log(projects)
 
     return (
         <div className="portfolio">

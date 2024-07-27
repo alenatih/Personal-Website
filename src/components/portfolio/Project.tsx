@@ -1,12 +1,42 @@
 import { useLoaderData, useParams } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
+import Coffeshop from "../../assets/coffeshop.jpg"
+import CoffeshopLight from "../../assets/coffeshop-light.jpg"
 
 function Project() {
     const { id } = useParams()
     const projectInfo:any = useLoaderData()
 
+    const projectImages = [
+        {
+            id: "66a42cf30017d026c701",
+            image: Coffeshop,
+        },
+        {
+            id: "66a42f5e003e71e6b4e6",
+            image: CoffeshopLight,
+        }
+    ]
+
+    let imageUrl = ""
+
+    function image() {
+        const projectImageObject = projectImages.find(projectImage => {
+            return projectImage.id === id
+        })
+
+        if (projectImageObject) {
+            // console.log("It works")
+            imageUrl = projectImageObject.image
+            return projectImageObject.image
+        }
+    }
+
+    image()
+
     return (
         <div className="project" id={id}>
+            <img className="project-image" src={imageUrl} alt="Project image"></img>
             <h4>{projectInfo.Title}</h4>
             <p>{projectInfo.Description}</p>
         </div>
