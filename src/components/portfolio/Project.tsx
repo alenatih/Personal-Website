@@ -37,7 +37,7 @@ function Project() {
     return (
         <div className="project" id={id}>
             <img className="project-image" src={imageUrl} alt="Project image"></img>
-            <h4>{projectInfo.Title}</h4>
+            <h4 className="project-title">{projectInfo.Title}</h4>
             <p>{projectInfo.Description}</p>
         </div>
     )

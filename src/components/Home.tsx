@@ -2,7 +2,7 @@ function Home() {
 
     return (
         <div className="home">
-            Home
+            <h2 className="home-title">Home</h2>
         </div>
     )
 }

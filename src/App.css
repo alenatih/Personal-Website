@@ -12,6 +12,19 @@
 
 /* Typography and icons */
 
+.home-title,
+.about-me-title,
+.skills-title,
+.portfolio-title,
+.blog-title {
+  font-size: 2rem;
+}
+
+.contact-title,
+.project-title {
+  font-size: 1.125rem;
+}
+
 .about-me-title {
   text-align: center;
 }

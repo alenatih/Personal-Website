@@ -4,7 +4,7 @@ function PortfolioLayout() {
 
     return (
         <div className="portfolio-layout">
-            Portfolio
+            <h2 className="portfolio-title">Portfolio</h2>
 
             {/* <nav>
                 <NavLink to="projectone">Project 1</NavLink>

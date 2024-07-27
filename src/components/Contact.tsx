@@ -5,7 +5,7 @@ function Contact() {
 
     return (
         <div className="contact">
-            <h4>Contact me</h4>
+            <h4 className="contact-title">Contact me</h4>
 
             <Form className="contact-form" method="post" action="/contact">
                 <label>
