@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom"
+// import { NavLink, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 
 function PortfolioLayout() {
 
