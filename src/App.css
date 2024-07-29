@@ -21,9 +21,13 @@
 }
 
 .contact-title,
-.project-title,
+.project-title-link,
 .not-found-title {
   font-size: 1.125rem;
+}
+
+.project-title-link {
+  cursor: pointer;
 }
 
 .about-me-title {
