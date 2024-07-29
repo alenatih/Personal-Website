@@ -5,7 +5,7 @@ function ToggleButton() {
   // Initialize state based on sessionStorage
   const [isLightMode, setIsLightMode] = useState(() => {
     const savedMode = sessionStorage.getItem("isLightMode")
-    return savedMode ? JSON.parse(savedMode) : true // Makes the app light mode by default
+    return savedMode ? JSON.parse(savedMode) : false // Makes the app dark mode by default
   })
 
   useEffect(() => {
