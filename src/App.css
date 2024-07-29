@@ -69,6 +69,10 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   padding: 2.5rem;
 }
 
@@ -86,6 +90,14 @@
   justify-content: center;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin: 2rem;
+}
+
 .project-one,
 .project-two {
   margin-top: 1rem;
@@ -96,10 +108,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   color: whitesmoke;
   background-color: #3F485A;
-  margin-top: 1rem;
+  gap: 1rem;
+  width: 100%;
+  margin: 1rem auto 2rem;
   padding: 2rem;
 }
 
@@ -216,4 +229,18 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .project {
+    width: 70%;
+  }
+
 }
