@@ -114,6 +114,7 @@
   width: 100%;
   margin: 1rem auto 2rem;
   padding: 2rem;
+  border-radius: 0.5rem;
 }
 
 .breadcrumbs {
@@ -240,7 +241,7 @@
   }
 
   .project {
-    width: 70%;
+    width: 60%;
   }
 
 }
