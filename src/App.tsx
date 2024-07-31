@@ -62,8 +62,6 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path={ROUTE.aboutMe} element={<AboutMe />} />
       <Route path={ROUTE.portfolio} element={<PortfolioLayout />} errorElement={<ProjectsError />}>
-        <Route path="projectone" element={<ProjectOne />} />
-        <Route path="projecttwo" element={<ProjectTwo />} />
         <Route
           index
           element={<Portfolio />}
