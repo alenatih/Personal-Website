@@ -11,8 +11,6 @@ function Portfolio() {
             {projects.map((project:any) => (
                 // <NavLink to={project.id.toString()} key={project.id}>
                 <NavLink to={project.$id} key={project.$id}>
-                    {/* <h4>{project.title}</h4>
-                    <p>{project.description}</p> */}
                     <h4>{project.Title}</h4>
                 </NavLink>
             ))}
