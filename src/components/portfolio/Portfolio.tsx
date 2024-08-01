@@ -8,7 +8,7 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            {projects.map((project:any) => (
+            {projects.reverse().map((project:any) => (
                 // <NavLink to={project.id.toString()} key={project.id}>
                 <NavLink to={project.$id} key={project.$id}>
                     <h4>{project.Title}</h4>
