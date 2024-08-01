@@ -6,9 +6,17 @@ function Portfolio() {
 
     // console.log(projects)
 
+    if (!projects) {
+        return (
+            <div>
+                <h4>Loading...</h4>
+            </div>
+        )
+    }
+
     return (
         <div className="portfolio">
-            {projects.reverse().map((project:any) => (
+            {[...projects].reverse().map((project:any) => (
                 // <NavLink to={project.id.toString()} key={project.id}>
                 <NavLink to={project.$id} key={project.$id}>
                     <h4>{project.Title}</h4>
