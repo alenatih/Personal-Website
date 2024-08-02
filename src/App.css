@@ -21,14 +21,11 @@
   text-align: center;
 }
 
-.contact-title,
 .project-title-link,
+.contact-title,
+.social-links-title,
 .not-found-title {
   font-size: 1.125rem;
-}
-
-.contact-title {
-  text-align: center;
 }
 
 .project-title-link {
@@ -36,6 +33,14 @@
 }
 
 .skills-text {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.social-links-title {
   margin-top: 1rem;
 }
 
@@ -135,6 +140,12 @@
   display: none;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -160,6 +171,15 @@
   margin: 0.5rem 0 1rem;
   border: none;
   border-radius: 0.5rem;
+}
+
+.social-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 4.5rem;
 }
 
 .footer {
