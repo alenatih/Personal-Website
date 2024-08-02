@@ -3,7 +3,10 @@ function Skills() {
         <div className="skills">
             <h2 className="skills-title">My skills</h2>
             <p className="skills-text">
-                My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, React Router, Firebase, and Figma. 
+                My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, 
+                React Router, Firebase, and Figma. 
+            </p>
+            <p className="skills-text">
                 Learning React, TypeScript, and Tailwind CSS.
             </p>
         </div>
