@@ -29,6 +29,12 @@
   font-size: 1.125rem;
 }
 
+.project-title:hover {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
 .project-title {
   margin-top: 1rem;
 }
@@ -244,6 +250,10 @@
   border-radius: 0.5rem;
 }
 
+.nav a:hover {
+  text-decoration: underline;
+}
+
 .nav a.active {
   color: whitesmoke;
   background-color: cornflowerblue;
@@ -293,9 +303,9 @@
 
   .portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     /* grid-template-rows: 1fr 1fr; */
-    column-gap: 2rem;
+    column-gap: 4.5rem;
   }
 
   .project {
