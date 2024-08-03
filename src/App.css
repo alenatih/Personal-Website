@@ -246,6 +246,7 @@
 
 .project-live-link,
 .project-github-link {
+  text-decoration: underline;
   cursor: pointer;
 }
 

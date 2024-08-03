@@ -40,7 +40,7 @@ function Project() {
             <a className="project-title-link" href={projectInfo.Link} target="_blank">
                 {projectInfo.Title}
             </a>
-            <p>{projectInfo.Description}</p>
+            <p className="project-description">{projectInfo.Description}</p>
             <div className="project-links-container">
                 <a className="project-live-link" href={projectInfo.Link} target="_blank">
                     It's live here
