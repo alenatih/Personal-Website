@@ -41,9 +41,14 @@ function Project() {
                 {projectInfo.Title}
             </a>
             <p>{projectInfo.Description}</p>
-            <a className="project-github-link" href={projectInfo.GitHubLink} target="_blank">
-                GitHub
-            </a>
+            <div className="project-links-container">
+                <a className="project-live-link" href={projectInfo.Link} target="_blank">
+                    It's live here
+                </a>
+                <a className="project-github-link" href={projectInfo.GitHubLink} target="_blank">
+                    GitHub
+                </a>
+            </div>
         </div>
     )
 }

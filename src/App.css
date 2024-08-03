@@ -123,6 +123,11 @@
   border-radius: 0.5rem;
 }
 
+.project-links-container {
+  display: flex;
+  align-items: center;
+}
+
 .breadcrumbs {
   max-width: 80%;
   /* margin: 1rem auto 0; */
@@ -237,6 +242,15 @@
 .not-found a,
 .projects-error a {
   text-decoration: underline;
+}
+
+.project-live-link,
+.project-github-link {
+  cursor: pointer;
+}
+
+.project-live-link {
+  margin-right: 1rem;
 }
 
 /* Media queries */
