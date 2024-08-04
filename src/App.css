@@ -55,6 +55,13 @@
   margin: 1rem 0;
 }
 
+.footer-text {
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  margin: 0;
+}
+
 /* Layout */
 
 .app-container {
@@ -209,11 +216,15 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
   /* padding: 4.5rem; */
   margin: auto 0 0;
+}
+
+.footer .social-links-container {
+  padding: 0 2rem 2rem;
 }
 
 /* Buttons */
@@ -293,6 +304,11 @@
     width: 80%;
   }
 
+  .footer-text {
+    text-align: start;
+    padding: 2rem 4.5rem 4.5rem;
+  }
+
   /* Layout */
 
   .nav {
@@ -310,6 +326,16 @@
 
   .project {
     width: 60%;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer .social-links-container {
+    justify-content: flex-end;
+    padding: 2rem 4.5rem 4.5rem;
   }
 
 }
