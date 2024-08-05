@@ -23,6 +23,7 @@
 
 .project-title-link,
 .project-title,
+.blog-quote-title,
 .contact-title,
 .social-links-title,
 .not-found-title {
@@ -45,6 +46,14 @@
 
 .skills-text {
   margin-top: 1rem;
+}
+
+.blog-quote-title {
+  margin-top: 1rem;
+}
+
+.blog-quote-text {
+  text-align: center;
 }
 
 .contact-title {
@@ -300,7 +309,8 @@
   }
 
   .about-me-text,
-  .skills-text {
+  .skills-text,
+  .blog-quote-text {
     width: 80%;
   }
 
