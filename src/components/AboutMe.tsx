@@ -25,7 +25,7 @@ function AboutMe() {
                 and working towards becoming a Frontend Developer.
             </p>
             <p className="about-me-text">My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, 
-                React Router, Firebase, and Figma. Learning React, TypeScript, and Tailwind CSS.
+                React Router, Vite, Vercel, Firebase, and Figma. Learning React, TypeScript, and Tailwind CSS.
             </p>
             <p className="about-me-text">I love design, UX/UI, books, languages, and AI. 
                 I enjoy building web apps, learning and using new technologies.
