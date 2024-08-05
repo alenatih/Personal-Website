@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="footer">
-            <p className="footer-text">Made with <i className="fa-solid fa-heart"></i> by Alena</p>
+            <p className="footer-text">Built with <i className="fa-solid fa-heart"></i> by Alena</p>
 
             <div className="social-links-container">
                 <a href="https://x.com/Alennushkaa" target="_blank">
