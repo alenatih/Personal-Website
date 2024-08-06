@@ -16,7 +16,7 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            {[...projects].reverse().map((project:any) => (
+            {projects.toReversed().map((project:any) => (
                 // <NavLink to={project.id.toString()} key={project.id}>
                 <NavLink to={project.$id} key={project.$id}>
                     <h4 className="project-title">{project.Title}</h4>
