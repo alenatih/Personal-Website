@@ -222,6 +222,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -246,10 +255,19 @@
 .input-name,
 .input-email,
 .input-message {
+  background-color: #F7EFE2;
   padding: 1rem;
   margin: 0.5rem 0 1rem;
   border: none;
   border-radius: 0.5rem;
+}
+
+.contact-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-links-container {
@@ -286,14 +304,14 @@
   border-radius: 0.5rem;
 }
 
-.about-me-log-button {
+/* .about-me-log-button {
   color: whitesmoke;
   background-color: cornflowerblue;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 0.5rem;
-}
+} */
 
 /* Images */
 
@@ -401,6 +419,13 @@
 
   .project {
     width: 60%;
+  }
+
+  .contact {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* gap: 4.5rem; */
   }
 
   .footer {

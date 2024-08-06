@@ -5,45 +5,55 @@ function Contact() {
 
     return (
         <div className="contact">
-            <h4 className="contact-title">Contact me</h4>
 
-            <Form className="contact-form" method="post" action="/contact">
-                <label>
-                    Your name
-                    <input className="input-name" type="text" name="name" required />
-                </label>
+            <div className="contact-form-container">
 
-                <label>
-                    Your email
-                    <input className="input-email" type="email" name="email" required />
-                </label>
+                <h4 className="contact-title">Contact me</h4>
 
-                <label>
-                    Your message
-                    <textarea className="input-message" name="message" required ></textarea>
-                </label>
+                <Form className="contact-form" method="post" action="/contact">
+                    <label>
+                        Your name
+                        <input className="input-name" type="text" name="name" required />
+                    </label>
 
-                <button className="form-submit-button">Submit</button>
+                    <label>
+                        Your email
+                        <input className="input-email" type="email" name="email" required />
+                    </label>
 
-                {data && data.error && <p>{data.error}</p>}
-            </Form>
+                    <label>
+                        Your message
+                        <textarea className="input-message" name="message" required ></textarea>
+                    </label>
 
-            <h4 className="social-links-title">My links</h4>
+                    <button className="form-submit-button">Submit</button>
 
-            <div className="social-links-container">
-                <a href="https://x.com/Alennushkaa" target="_blank">
-                    <i className="fa-brands fa-square-x-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/@alenaatikh" target="_blank">
-                    <i className="fa-brands fa-square-youtube"></i>
-                </a>
-                <a href="https://www.instagram.com/allennushkaa/" target="_blank">
-                    <i className="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://github.com/AlenaTih" target="_blank">
-                    <i className="fa-brands fa-square-github"></i>
-                </a>
+                    {data && data.error && <p>{data.error}</p>}
+                </Form>
+
             </div>
+
+            <div className="contact-social-container">
+
+                <h4 className="social-links-title">My links</h4>
+
+                <div className="social-links-container">
+                    <a href="https://x.com/Alennushkaa" target="_blank">
+                        <i className="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@alenaatikh" target="_blank">
+                        <i className="fa-brands fa-square-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/allennushkaa/" target="_blank">
+                        <i className="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/AlenaTih" target="_blank">
+                        <i className="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
     )
 }
