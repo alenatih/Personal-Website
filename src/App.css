@@ -52,6 +52,17 @@
   margin-top: 1rem;
 }
 
+.blog-title-span,
+.blog-quote-title-span {
+  font-size: 0.75rem;
+}
+
+.blog-quote-title-span {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 .blog-quote-text {
   text-align: center;
 }
