@@ -1,5 +1,6 @@
 // import { useState } from "react"
 // import { Navigate, useSearchParams } from "react-router-dom"
+import Sunset from "../assets/sunset.png"
 
 function AboutMe() {
     // const [user, setUser] = useState("userName")
@@ -19,18 +20,28 @@ function AboutMe() {
         <div className="about-me">
             {/* {name && <p>Hi, {name}!</p>} */}
 
-            <h2 className="about-me-title">About me</h2>
+            <h2 className="about-me-title mobile">About me</h2>
 
-            <p className="about-me-text">I’m currently taking the Frontend Developer Career Path course on Scrimba 
-                and working towards becoming a Frontend Developer.
-            </p>
-            <p className="about-me-text">My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, 
-                React Router, Vite, Vercel, Firebase, and Figma. Learning React, TypeScript, and Tailwind CSS.
-            </p>
-            <p className="about-me-text">I love design, UX/UI, books, languages, and AI. 
-                I enjoy building web apps, learning and using new technologies.
-            </p>
-            <p className="about-me-text">I also enjoy doing aerial gymnastics on silks and lyra.</p>
+            <div className="about-me-image-container">
+                <img className="about-me-image" src={Sunset} alt="Alena smiles"></img>
+            </div>
+
+            <div className="about-me-text-container">
+
+                <h2 className="about-me-title desktop">About me</h2>
+
+                <p className="about-me-text">I’m currently taking the Frontend Developer Career Path course on Scrimba 
+                    and working towards becoming a Frontend Developer.
+                </p>
+                <p className="about-me-text">My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, 
+                    React Router, Vite, Vercel, Firebase, and Figma. Learning React, TypeScript, and Tailwind CSS.
+                </p>
+                <p className="about-me-text">I love design, UX/UI, books, languages, and AI. 
+                    I enjoy building web apps, learning and using new technologies.
+                </p>
+                <p className="about-me-text">I also enjoy doing aerial gymnastics on silks and lyra.</p>
+
+            </div>
 
             {/* <div className="about-me-log-button-container">
                 <button className="about-me-log-button" onClick={handleClick}>Sign out</button>
