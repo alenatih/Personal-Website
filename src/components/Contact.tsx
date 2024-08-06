@@ -64,6 +64,7 @@ export const contactAction = async ({request}:any) => {
     // Send a post request
 
     if (submission.message.length < 10) {
+        alert("Please write a message longer than 10 characters.")
         return {error: "Please write a message longer than 10 characters."}
     }
 
