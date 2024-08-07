@@ -1,21 +1,72 @@
+import { useState, useEffect } from "react"
 import { NavLink, Outlet } from "react-router-dom"
 import Breadcrumbs from "../components/Breadcrumbs.tsx"
 import ToggleButton from "../components/ToggleButton.tsx"
 
 function RootLayout() {
+
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(() => {
+        return window.innerWidth < 600 ? true : false
+    })
+
+    const checkScreenSize = () => {
+        setIsMobile(() => {
+            return window.innerWidth < 600 ? true : false
+        })
+    }
+
+    useEffect(() => {
+        // Set up an event listener
+        window.addEventListener("resize", checkScreenSize)
+
+        // Check screen size on initial load
+        checkScreenSize()
+
+        // Clean up an event listener on component unmount
+        return () => {
+        window.removeEventListener("resize", checkScreenSize)
+        }
+    }, [])
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(prevIsDropdownOpen => !prevIsDropdownOpen)
+    }
+
+
     return (
         <div className="root-layout">
             <header className="header">
-                <nav className="nav">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/aboutme">About Me</NavLink>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
-                    <NavLink to="/skills">Skills</NavLink>
-                    <NavLink to="/blog">Blog</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
+                <div className="nav-container">
+                    {isMobile ? (
+                        <div className="header-mobile-menu" onClick={toggleDropdown}>
+                            <i className="fa-solid fa-bars burger-icon"></i>
+                            {isDropdownOpen && (
+                            <nav className="mobile-menu-opened">
+                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/aboutme">About Me</NavLink>
+                                <NavLink to="/portfolio">Portfolio</NavLink>
+                                <NavLink to="/skills">Skills</NavLink>
+                                <NavLink to="/blog">Blog</NavLink>
+                                <NavLink to="/contact">Contact</NavLink>
+                            </nav>
+                            )}
+                            <ToggleButton />
+                        </div>
+                    ) :
+                        (<nav className="nav">
+                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/aboutme">About Me</NavLink>
+                            <NavLink to="/portfolio">Portfolio</NavLink>
+                            <NavLink to="/skills">Skills</NavLink>
+                            <NavLink to="/blog">Blog</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
+                            <ToggleButton />
+                        </nav>
+                        )}
 
-                    <ToggleButton />
-                </nav>
+                    {/* <ToggleButton /> */}
+                </div>
 
                 <Breadcrumbs />
             </header>
