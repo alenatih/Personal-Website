@@ -30,7 +30,7 @@ function RootLayout() {
     }, [])
 
     const toggleDropdown = () => {
-        setIsDropdownOpen(prevIsDropdownOpen => !prevIsDropdownOpen)
+        setIsDropdownOpen((prevIsDropdownOpen: boolean) => !prevIsDropdownOpen)
     }
 
 
