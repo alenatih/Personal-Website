@@ -19,7 +19,7 @@ function Portfolio() {
         <div className="portfolio">
             {projects.toReversed().map((project:any) => {
                 // <NavLink to={project.id.toString()} key={project.id}>
-                const slug = slugify(project.Title, { lower: true })
+                const slug = slugify(project.Title, { lower: true, replacement: "_" })
                 return (
                     <NavLink to={`${slug}-${project.$id}`} key={project.$id}>
                         <h4 className="project-title">{project.Title}</h4>
