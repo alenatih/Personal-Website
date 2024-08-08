@@ -67,7 +67,7 @@ const router = createBrowserRouter(
           element={<Portfolio />}
           loader={projectsLoader} />
         <Route
-          path=":id"
+          path=":slugId"
           element={<Project />}
           loader={projectInfoLoader}
         />

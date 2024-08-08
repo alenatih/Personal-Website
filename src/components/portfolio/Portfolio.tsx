@@ -1,5 +1,6 @@
 import { NavLink, useLoaderData } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
+import slugify from "slugify"
 
 function Portfolio() {
     const projects:any = useLoaderData()
@@ -16,12 +17,15 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            {projects.toReversed().map((project:any) => (
+            {projects.toReversed().map((project:any) => {
                 // <NavLink to={project.id.toString()} key={project.id}>
-                <NavLink to={project.$id} key={project.$id}>
-                    <h4 className="project-title">{project.Title}</h4>
-                </NavLink>
-            ))}
+                const slug = slugify(project.Title, { lower: true })
+                return (
+                    <NavLink to={`${slug}-${project.$id}`} key={project.$id}>
+                        <h4 className="project-title">{project.Title}</h4>
+                    </NavLink>
+                )
+})}
         </div>
     )
 }
