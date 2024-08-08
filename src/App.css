@@ -161,6 +161,18 @@
   margin: 0 auto;
 }
 
+.home-links {
+  color: whitesmoke;
+  background-color: #2E5CB5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  margin: 2.5rem;
+  border-radius: 1rem;
+}
+
 .about-me-text-container {
   display: flex;
   flex-direction: column;
@@ -359,7 +371,11 @@
 
 .nav a.active {
   color: whitesmoke;
-  background-color: cornflowerblue;
+  background-color: #143982;
+}
+
+.view-work-link {
+  font-size: 1.25rem;
 }
 
 .not-found a,
@@ -391,10 +407,13 @@
     font-size: 2rem;
   }
 
-  .about-me-text,
+  .about-me-text {
+    width: 80%;
+  }
+
   .skills-text,
   .blog-quote-text {
-    width: 80%;
+    width: 60%;
   }
 
   .about-me-title.mobile {
@@ -433,6 +452,10 @@
     flex-direction: row;
   }
 
+  /* .about-me-text-container {
+    padding: 2rem;
+  } */
+
   .about-me-image-container {
     width: 80%;
     /* margin: 0 2rem 0 0; */
@@ -447,6 +470,10 @@
 
   .project {
     width: 60%;
+  }
+
+  .breadcrumbs {
+    padding: 1rem;
   }
 
   .contact {
@@ -469,6 +496,12 @@
   .footer .social-links-container {
     justify-content: flex-end;
     padding: 2rem 4.5rem 4.5rem;
+  }
+
+  /* Links */
+
+  .view-work-link {
+    font-size: 1.5rem;
   }
 
 }
