@@ -21,8 +21,8 @@
   text-align: center;
 }
 
-.project-title-link,
 .project-title,
+.project-title-link
 .blog-quote-title,
 .contact-title,
 .social-links-title,
@@ -30,14 +30,19 @@
   font-size: 1.125rem;
 }
 
-.project-title:hover {
-  font-size: 1.25rem;
-  text-decoration: underline;
-  transition: 0.2s;
+.project-title {
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid #F7EFE2;
+  border-radius: 0.5rem;
 }
 
-.project-title {
-  margin-top: 1rem;
+.project-title:hover {
+  /* font-size: 1.25rem; */
+  background-color: cornflowerblue;
+  text-decoration: underline;
+  transition: 0.2s;
+  border: none;
 }
 
 .project-title-link {
@@ -221,7 +226,7 @@
   background-color: #3F485A;
   gap: 1rem;
   width: 100%;
-  margin: 1rem auto 2rem;
+  margin: 2rem auto;
   padding: 2rem;
   border-radius: 0.5rem;
 }
