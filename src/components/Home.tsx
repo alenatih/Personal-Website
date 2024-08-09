@@ -20,8 +20,8 @@ function Home() {
                         <NavLink className="view-work-link" to="/portfolio">View my work</NavLink>
 
                     <p className="home-text">
-                        My goal is to be not just a Frontend developer,
-                        but to be a software engineer who can work with any technology,
+                        My goal is to be not just a Frontend developer, 
+                        but a software engineer who can work with any technology 
                         and solve problems.
                     </p>
                 </div>
