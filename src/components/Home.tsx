@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import Sunset from "../assets/sunset.png"
 
 function Home() {
 
@@ -6,8 +7,24 @@ function Home() {
         <div className="home">
             <h2 className="home-title">Alena Tikhomirova, a Frontend developer</h2>
 
-            <div className="home-links">
-                <NavLink className="view-work-link" to="/portfolio">View my work</NavLink>
+            <div className="home-container">
+                <div className="home-image-container">
+                    <img
+                        className="home-image"
+                        src={Sunset}
+                        alt="Alena smiles with sunset in the background">
+                    </img>
+                </div>
+
+                <div className="home-text-container">
+                        <NavLink className="view-work-link" to="/portfolio">View my work</NavLink>
+
+                    <p className="home-text">
+                        My goal is to be not just a Frontend developer,
+                        but to be a software engineer who can work with any technology,
+                        and solve problems.
+                    </p>
+                </div>
             </div>
         </div>
     )

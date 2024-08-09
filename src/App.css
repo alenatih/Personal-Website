@@ -30,6 +30,10 @@
   font-size: 1.125rem;
 }
 
+/* .home-title {
+  margin-top: 0;
+} */
+
 .project-title {
   padding: 1rem 1.5rem;
   margin-top: 1rem;
@@ -55,6 +59,10 @@
 
 .about-me-title.desktop {
   display: none;
+}
+
+.home-text {
+  text-align: center;
 }
 
 .skills-text {
@@ -149,7 +157,7 @@
   /* justify-content: center; */
   /* height: 100%; */
   width: 100%;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .home,
@@ -166,16 +174,27 @@
   margin: 0 auto;
 }
 
-.home-links {
-  color: whitesmoke;
-  background-color: #2E5CB5;
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.5rem;
-  margin: 2.5rem;
-  border-radius: 1rem;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .about-me-text-container {
@@ -357,6 +376,11 @@
   width: 40%;
 } */
 
+.home-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
 .about-me-image {
   width: 100%;
   border-radius: 0.5rem;
@@ -380,7 +404,17 @@
 }
 
 .view-work-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 1.125rem;
+  color: whitesmoke;
+  background-color: #2E5CB5;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 .not-found a,
@@ -410,6 +444,10 @@
   .portfolio-title,
   .blog-title {
     font-size: 2rem;
+  }
+
+  .home-text {
+    width: 40%;
   }
 
   .about-me-text {
@@ -450,7 +488,15 @@
   }
 
   .main {
-    padding: 2.5rem;
+    padding: 0 2.5rem;
+  }
+
+  /* .home-container {
+    flex-direction: row;
+  } */
+
+  .home-image-container {
+    width: 20%;
   }
 
   .about-me {
@@ -507,6 +553,7 @@
 
   .view-work-link {
     font-size: 1.25rem;
+    margin: 2rem;
   }
 
 }
