@@ -209,7 +209,7 @@
   justify-content: center;
   /* gap: 1rem; */
   width: 100%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .project-one,
@@ -380,7 +380,7 @@
 }
 
 .view-work-link {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .not-found a,
@@ -506,7 +506,7 @@
   /* Links */
 
   .view-work-link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
 }
