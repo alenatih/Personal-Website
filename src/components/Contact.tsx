@@ -6,6 +6,27 @@ function Contact() {
     return (
         <div className="contact">
 
+            <div className="contact-social-container">
+
+                <h4 className="social-links-title">My links</h4>
+
+                <div className="social-links-container">
+                    <a href="https://x.com/Alennushkaa" target="_blank">
+                        <i className="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@alenaatikh" target="_blank">
+                        <i className="fa-brands fa-square-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/allennushkaa/" target="_blank">
+                        <i className="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/AlenaTih" target="_blank">
+                        <i className="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
             <div className="contact-form-container">
 
                 <h4 className="contact-title">Contact me</h4>
@@ -30,27 +51,6 @@ function Contact() {
 
                     {data && data.error && <p>{data.error}</p>}
                 </Form>
-
-            </div>
-
-            <div className="contact-social-container">
-
-                <h4 className="social-links-title">My links</h4>
-
-                <div className="social-links-container">
-                    <a href="https://x.com/Alennushkaa" target="_blank">
-                        <i className="fa-brands fa-square-x-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@alenaatikh" target="_blank">
-                        <i className="fa-brands fa-square-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/allennushkaa/" target="_blank">
-                        <i className="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/AlenaTih" target="_blank">
-                        <i className="fa-brands fa-square-github"></i>
-                    </a>
-                </div>
 
             </div>
 

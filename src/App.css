@@ -324,6 +324,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 4.5rem;
 }
 
 .contact-form {
@@ -574,6 +575,10 @@
     align-items: center;
     justify-content: center;
     /* gap: 4.5rem; */
+  }
+
+  .contact-form-container {
+    margin-top: 0;
   }
 
   .contact-form {
