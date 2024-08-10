@@ -206,6 +206,10 @@
   margin-top: 1rem;
 }
 
+.about-me {
+  padding-bottom: 2.5rem;
+}
+
 .about-me-text-container {
   display: flex;
   flex-direction: column;
@@ -525,7 +529,6 @@
 
   .about-me {
     flex-direction: row;
-    padding-bottom: 2.5rem;
   }
 
   /* .about-me-text-container {
