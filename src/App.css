@@ -179,6 +179,10 @@
   margin: 0 auto;
 }
 
+.home {
+  padding-bottom: 2.5rem;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
