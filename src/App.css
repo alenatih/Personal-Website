@@ -265,7 +265,9 @@
   align-items: center;
 }
 
-.skills {
+.skills,
+.blog,
+.resources {
   padding-bottom: 2.5rem;
 }
 
