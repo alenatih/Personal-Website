@@ -52,9 +52,10 @@ const router = createBrowserRouter(
     //       loader={projectInfoLoader}
     //     />
     //   </Route>
-    //   <Route path="/skills" element={<Skills />} />
-      // <Route path={ROUTE.blog} element={<Blog />} />
-    // <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
+    // <Route path="/skills" element={<Skills />} />
+    // <Route path="/blog" element={<Blog />} />
+    // <Route path="/resources" element={<Resources />} />
+    // <Route path="/contact" element={<Contact />} action={contactAction} />
 
     //   <Route path="*" element={<NotFound />} />
     // </Route>
@@ -74,8 +75,8 @@ const router = createBrowserRouter(
         />
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
-      <Route path={ROUTE.resources} element={<Resources />} />
       <Route path={ROUTE.blog} element={<Blog />} />
+      <Route path={ROUTE.resources} element={<Resources />} />
       <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
 
       <Route path="*" element={<NotFound />} />

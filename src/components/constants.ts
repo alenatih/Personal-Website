@@ -3,7 +3,7 @@
     aboutMe: "/aboutme",
     portfolio: "/portfolio",
     skills: "/skills",
-    resources: "/resources",
     blog: "/blog",
+    resources: "/resources",
     contact: "/contact"
   }
