@@ -67,10 +67,10 @@ function RootLayout() {
 
                     {/* <ToggleButton /> */}
                 </div>
-
-                <Breadcrumbs />
             </header>
+            
             <main className="main">
+                <Breadcrumbs/>
                 <Outlet />
             </main>
         </div>
