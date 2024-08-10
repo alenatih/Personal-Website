@@ -24,6 +24,12 @@ function Home() {
                         but a software engineer who can work with any technology 
                         and solve problems.
                     </p>
+
+                    <p className="home-text">
+                        You can read a little bit more 
+                        <NavLink to="/aboutme"> about me</NavLink>,
+                        and check out my <NavLink to="/blog">blog.</NavLink>
+                    </p>
                 </div>
             </div>
         </div>

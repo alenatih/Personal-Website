@@ -63,6 +63,7 @@
 
 .home-text {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .skills-text {
@@ -401,6 +402,10 @@
 .nav a.active {
   color: whitesmoke;
   background-color: #143982;
+}
+
+.home-text a {
+  text-decoration: underline;
 }
 
 .view-work-link {
