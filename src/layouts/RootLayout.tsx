@@ -39,8 +39,11 @@ function RootLayout() {
             <header className="header">
                 <div className="nav-container">
                     {isMobile ? (
-                        <div className="header-mobile-menu" onClick={toggleDropdown}>
-                            <i className="fa-solid fa-bars burger-icon"></i>
+                        <div className="header-mobile-menu">
+                            <i
+                                className="fa-solid fa-bars burger-icon"
+                                onClick={toggleDropdown}>
+                            </i>
                             {isDropdownOpen && (
                             <nav className="mobile-menu-opened">
                                 <NavLink to="/">Home</NavLink>
@@ -52,6 +55,7 @@ function RootLayout() {
                                 <NavLink to="/contact">Contact</NavLink>
                             </nav>
                             )}
+                            <NavLink to="/">Home</NavLink>
                             <ToggleButton />
                         </div>
                     ) :
@@ -66,8 +70,6 @@ function RootLayout() {
                             <ToggleButton />
                         </nav>
                         )}
-
-                    {/* <ToggleButton /> */}
                 </div>
             </header>
 
