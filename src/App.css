@@ -265,6 +265,10 @@
   align-items: center;
 }
 
+.skills {
+  padding-bottom: 2.5rem;
+}
+
 .breadcrumbs {
   max-width: 80%;
   /* margin: 1rem auto 0; */
