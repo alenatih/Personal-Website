@@ -47,6 +47,7 @@ function RootLayout() {
                                 <NavLink to="/aboutme">About Me</NavLink>
                                 <NavLink to="/portfolio">Portfolio</NavLink>
                                 <NavLink to="/skills">Skills</NavLink>
+                                <NavLink to="/resources">Resources</NavLink>
                                 <NavLink to="/blog">Blog</NavLink>
                                 <NavLink to="/contact">Contact</NavLink>
                             </nav>
@@ -59,6 +60,7 @@ function RootLayout() {
                             <NavLink to="/aboutme">About Me</NavLink>
                             <NavLink to="/portfolio">Portfolio</NavLink>
                             <NavLink to="/skills">Skills</NavLink>
+                            <NavLink to="/resources">Resources</NavLink>
                             <NavLink to="/blog">Blog</NavLink>
                             <NavLink to="/contact">Contact</NavLink>
                             <ToggleButton />
@@ -68,7 +70,7 @@ function RootLayout() {
                     {/* <ToggleButton /> */}
                 </div>
             </header>
-            
+
             <main className="main">
                 <Breadcrumbs/>
                 <Outlet />

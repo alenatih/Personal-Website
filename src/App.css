@@ -23,6 +23,7 @@
 
 .project-title,
 .project-title-link,
+.resources-title,
 .blog-quote-title,
 .contact-title,
 .social-links-title,
@@ -166,6 +167,7 @@
 .home,
 .about-me,
 .skills,
+.resources,
 .blog {
   display: flex;
   flex-direction: column;

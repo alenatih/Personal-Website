@@ -18,6 +18,7 @@ import Portfolio, { projectsLoader } from "./components/portfolio/Portfolio.tsx"
 // import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
 import Skills from "./components/Skills.tsx"
+import Resources from "./components/Resources.tsx"
 import Blog from "./components/Blog.tsx"
 import Contact, { contactAction } from "./components/Contact.tsx"
 import NotFound from "./components/NotFound.tsx"
@@ -73,6 +74,7 @@ const router = createBrowserRouter(
         />
       </Route>
       <Route path={ROUTE.skills} element={<Skills />} />
+      <Route path={ROUTE.resources} element={<Resources />} />
       <Route path={ROUTE.blog} element={<Blog />} />
       <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
 
