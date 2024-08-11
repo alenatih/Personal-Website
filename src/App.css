@@ -27,6 +27,7 @@
 .blog-quote-title,
 .contact-title,
 .social-links-title,
+.projects-error-title,
 .not-found-title {
   font-size: 1.125rem;
 }
@@ -185,7 +186,9 @@
 .about-me,
 .skills,
 .resources,
-.blog {
+.blog,
+.projects-error,
+.not-found {
   display: flex;
   flex-direction: column;
   align-items: center;
