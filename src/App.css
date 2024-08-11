@@ -202,6 +202,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .home-text-container {
@@ -455,7 +456,7 @@
   color: whitesmoke;
   background-color: #2E5CB5;
   padding: 1rem 1.5rem;
-  margin: 1.5rem;
+  margin: 2.5rem;
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -600,7 +601,7 @@
 
   .view-work-link {
     font-size: 1.25rem;
-    margin: 2rem;
+    /* margin: 2.5rem; */
   }
 
 }
