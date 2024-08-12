@@ -387,7 +387,7 @@
   width: 100%;
   /* padding: 4.5rem; */
   margin: auto 0 0;
-  padding: 4.5rem;
+  padding: 4.5rem 4.5rem 6rem;
   box-shadow: 0 0 0.5rem 0.5rem #F7EFE2;
 }
 
@@ -605,7 +605,7 @@
   .footer {
     flex-direction: row;
     justify-content: space-around;
-    padding: 4.5rem;
+    padding: 4.5rem 4.5rem 6rem;
   }
 
   .footer .social-links-container {
