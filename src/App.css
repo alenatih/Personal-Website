@@ -126,7 +126,7 @@
   align-items: flex-start;
   width: 100%;
   padding: 2.5rem;
-  box-shadow: 0 0 0.5rem 0.5rem #F7EFE2;
+  box-shadow: 0 0 0.5rem 0.5rem #CFD9FA;
 }
 
 .nav-container {
@@ -388,7 +388,7 @@
   /* padding: 4.5rem; */
   margin: auto 0 0;
   padding: 4.5rem 4.5rem 6rem;
-  box-shadow: 0 0 0.5rem 0.5rem #F7EFE2;
+  box-shadow: 0 0 0.5rem 0.5rem #CFD9FA;
 }
 
 .footer .social-links-container {
@@ -400,11 +400,12 @@
 
 .form-submit-button {
   color: whitesmoke;
-  background-color: cornflowerblue;
+  background-color: #2E5CB5;
   padding: 1rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 0.5rem;
+  box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
 }
 
 /* .about-me-log-button {
@@ -424,12 +425,14 @@
 
 .home-image {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1.5rem 0.1125rem #B4C4FC;
 }
 
 .about-me-image {
   width: 100%;
   border-radius: 50%;
+  box-shadow: 0 0 2.5rem 0.1125rem #B4C4FC;
 }
 
 /* Links */
@@ -465,6 +468,7 @@
   margin: 2.5rem;
   border-radius: 1rem;
   cursor: pointer;
+  box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
 }
 
 .not-found a,
