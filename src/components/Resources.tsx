@@ -1,7 +1,7 @@
 function Resources() {
     return (
         <div className="resources">
-            <h4 className="resources-title">Resources</h4>
+            <h2 className="resources-title">Resources</h2>
             <a className="resources-link" href="#">Scrimba</a>
             <a className="resources-link" href="#">React Router course by Code Ninja</a>
             <a className="resources-link" href="#">Appwrite</a>

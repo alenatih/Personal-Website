@@ -16,6 +16,7 @@
 .about-me-title,
 .skills-title,
 .portfolio-title,
+.resources-title,
 .blog-title {
   font-size: 1.5rem;
   text-align: center;
@@ -23,7 +24,6 @@
 
 .project-title,
 .project-title-link,
-.resources-title,
 .blog-quote-title,
 .contact-title,
 .social-links-title,
@@ -492,6 +492,7 @@
   .about-me-title,
   .skills-title,
   .portfolio-title,
+  .resources-title,
   .blog-title {
     font-size: 2rem;
   }
