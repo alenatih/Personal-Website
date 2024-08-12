@@ -224,7 +224,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .about-me {
@@ -465,7 +465,7 @@
   color: whitesmoke;
   background-color: #2E5CB5;
   padding: 1rem 1.5rem;
-  margin: 2.5rem;
+  margin: 4.5rem 0;
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
@@ -516,7 +516,7 @@
   } */
 
   .about-me-text {
-    width: 80%;
+    width: 100%;
   }
 
   .skills-text,
@@ -538,6 +538,10 @@
   }
 
   /* Layout */
+
+  .header {
+    padding: 2.5rem 4.5rem;
+  }
 
   .nav {
     display: flex;
@@ -566,16 +570,16 @@
 
   .about-me {
     flex-direction: row;
+    padding: 0 4.5rem 4.5rem;
   }
 
   /* .about-me-text-container {
     padding: 2rem;
   } */
 
-  .about-me-image-container {
+  /* .about-me-image-container {
     width: 60%;
-    /* margin: 0 2rem 0 0; */
-  }
+  } */
 
   .portfolio {
     display: grid;
@@ -616,6 +620,12 @@
   .footer .social-links-container {
     justify-content: flex-end;
     padding: 0;
+  }
+
+  /* Images */
+
+  .about-me-image {
+    width: 70%;
   }
 
   /* Links */
