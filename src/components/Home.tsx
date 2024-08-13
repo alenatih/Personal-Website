@@ -30,6 +30,10 @@ function Home() {
                         <NavLink to="/aboutme"> about me</NavLink>,
                         and check out my <NavLink to="/blog">blog.</NavLink>
                     </p>
+
+                    <p className="home-text">
+                        And I'm open for Frontend Developer roles.
+                    </p>
                 </div>
             </div>
         </div>
