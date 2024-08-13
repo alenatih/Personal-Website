@@ -46,7 +46,6 @@
 .project-title:hover {
   /* font-size: 1.25rem; */
   background-color: cornflowerblue;
-  text-decoration: underline;
   transition: 0.2s;
   border: none;
 }
