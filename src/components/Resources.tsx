@@ -4,7 +4,12 @@ function Resources() {
             <h2 className="resources-title">Resources I recommend</h2>
 
             <div className="resource">
-                <a className="resources-link" href="https://v2.scrimba.com/">Scrimba</a>
+                <a
+                    className="resources-link"
+                    href="https://v2.scrimba.com/"
+                    target="_blank">
+                    Scrimba
+                </a>
                 <p className="resource-text">
                     — an awesome platform to learn 
                     and practice Frontend development.
@@ -12,7 +17,10 @@ function Resources() {
             </div>
 
             <div className="resource">
-                <a className="resources-link" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf">
+                <a
+                    className="resources-link"
+                    href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf"
+                    target="_blank">
                     React Router course by Net Ninja
                 </a>
                 <p className="resource-text">
@@ -21,10 +29,15 @@ function Resources() {
             </div>
 
             <div className="resource">
-                <a className="resources-link" href="https://appwrite.io/">Appwrite</a>
+                <a
+                    className="resources-link"
+                    href="https://appwrite.io/"
+                    target="_blank">
+                    Appwrite
+                </a>
                 <p className="resource-text">
                     — an awesome open-source platfrom to build apps with a lot of features
-                    including Authentication, Databases, Functions, Storage, and Messaging.
+                    including authentication, databases, functions, storage, and messaging.
                 </p>
                 <p className="resource-text">
                     I use Appwrite in this project to store information about my projects.
@@ -32,22 +45,34 @@ function Resources() {
             </div>
 
             <div className="resource">
-                <a className="resources-link" href="https://healthcheck.eddiehubcommunity.org/">
+                <a
+                    className="resources-link"
+                    href="https://healthcheck.eddiehubcommunity.org/"
+                    target="_blank">
                     HealthCheck
                 </a>
                 <p className="resource-text">
                     — an awesome open-source project to use, learn from, and contribute to.
                 </p>
 
-                <a href="https://github.com/EddieHubCommunity/HealthCheck">GitHub</a>
+                <a className="resources-link"
+                    href="https://github.com/EddieHubCommunity/HealthCheck"
+                    target="_blank">
+                    HealthCheck repository on GitHub
+                </a>
 
                 <p className="resource-text community-text">
                     Also a great community about open source:
                 </p>
-                <a href="https://github.com/EddieHubCommunity">EddieHub</a>
+                <a
+                    className="resources-link"
+                    href="https://github.com/EddieHubCommunity"
+                    target="_blank">
+                    EddieHub
+                </a>
             </div>
 
-        </div>
+        </div> 
     )
 }
 
