@@ -25,6 +25,8 @@ function Contact() {
                     </a>
                 </div>
 
+                <p className="contact-text">alyonatihomirova9@gmail.com</p>
+
             </div>
 
             <div className="contact-form-container">
