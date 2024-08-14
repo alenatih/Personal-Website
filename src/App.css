@@ -224,7 +224,9 @@
 .skills,
 .blog,
 .resources,
-.contact {
+.contact,
+.projects-error,
+.not-found {
   padding-bottom: 4.5rem;
 }
 
@@ -469,6 +471,12 @@
   box-shadow: 0 0 2.5rem 0.1125rem #B4C4FC;
 }
 
+.error-image {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
 /* Links */
 
 .nav a {
@@ -688,6 +696,10 @@
 
   .about-me-image {
     width: 70%;
+  }
+
+  .error-image {
+    width: 40%;
   }
 
   /* Links */
