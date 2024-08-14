@@ -31,8 +31,15 @@ function Home() {
                         and check out my <NavLink to="/blog">blog.</NavLink>
                     </p>
 
+                    <p className="home-text open-text">
+                        I'm open for Frontend Developer roles in a company or startup.
+                    </p>
+
                     <p className="home-text">
-                        And I'm open for Frontend Developer roles.
+                        You can contact me at <span className="home-email">alyonatihomirova9@gmail.com.</span>
+                    </p>
+                    <p className="home-text">
+                        or see my <NavLink to="/contact">social links.</NavLink>
                     </p>
                 </div>
             </div>
