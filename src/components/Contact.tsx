@@ -8,7 +8,7 @@ function Contact() {
 
             <div className="contact-social-container">
 
-                <h4 className="social-links-title">My links</h4>
+                <h4 className="social-links-title">Nice to meet you!</h4>
 
                 <div className="social-links-container">
                     <a href="https://x.com/Alennushkaa" target="_blank">
