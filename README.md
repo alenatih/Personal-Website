@@ -4,13 +4,13 @@
 
 Personal website of Alena Tikhomirova, a Frontend developer.
 
-## Features
+<!-- ## Features
 
 - **Feature:** description.
 
 ## Usage
 
-1. Usage.
+1. Usage. -->
 
 ## Technologies Used
 
@@ -22,7 +22,6 @@ Personal website of Alena Tikhomirova, a Frontend developer.
 - TypeScript
 - React Router
 - Appwrite
-- Tailwind CSS
 - Font Awesome CDN
 
 ## Contributors
@@ -37,6 +36,6 @@ If you have ideas to enhance this project or encounter any issues, feel free to 
 
 For inquiries or feedback, please contact me at alyonatihomirova9@gmail.com.
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
-Acknowledgments.
+Acknowledgments. -->
