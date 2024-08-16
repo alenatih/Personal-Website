@@ -12,10 +12,7 @@ import {
 // pages
 import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
-// import Header from "./components/Header.tsx"
 import Portfolio, { projectsLoader } from "./components/portfolio/Portfolio.tsx"
-// import ProjectOne from "./components/portfolio/ProjectOne.tsx"
-// import ProjectTwo from "./components/portfolio/ProjectTwo.tsx"
 import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
 import Skills from "./components/Skills.tsx"
 import Resources from "./components/Resources.tsx"
@@ -40,8 +37,6 @@ const router = createBrowserRouter(
     //   <Route index element={<Home />} />
     //   <Route path="/aboutme" element={<AboutMe />} />
     //   <Route path="/portfolio" element={<PortfolioLayout />} errorElement={<ProjectsError />}>
-    //     <Route path="projectone" element={<ProjectOne />} />
-    //     <Route path="projecttwo" element={<ProjectTwo />} />
     //     <Route
     //       index
     //       element={<Portfolio />}
