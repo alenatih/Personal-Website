@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom"
+
 function Blog() {
     return (
         <div className="blog">
@@ -13,6 +15,8 @@ function Blog() {
                 right now, by getting up and getting started."
             </p>
             <p className="blog-quote-author">- Ryan Holiday</p>
+
+            <Outlet />
         </div>
     )
 }
