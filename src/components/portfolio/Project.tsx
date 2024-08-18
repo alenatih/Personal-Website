@@ -1,7 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
-// import Coffeshop from "../../assets/coffeshop.jpg"
-// import CoffeshopLight from "../../assets/coffeshop-light.jpg"
 
 function Project() {
     const { slugId } = useParams()

@@ -25,9 +25,11 @@
 .project-title,
 .project-title-link,
 .blog-quote-title,
+.blog-post-title,
 .contact-title,
 .social-links-title,
 .projects-error-title,
+.blog-error-title,
 .not-found-title {
   font-size: 1.125rem;
 }
@@ -94,6 +96,10 @@
 .blog-title-span,
 .blog-quote-title-span {
   font-size: 0.75rem;
+}
+
+.blog-quote-author {
+  margin-bottom: 2.5rem;
 }
 
 .blog-quote-title-span {
@@ -208,6 +214,7 @@
 .resources,
 .blog,
 .projects-error,
+.blog-error,
 .not-found {
   display: flex;
   flex-direction: column;
@@ -226,6 +233,7 @@
 .resources,
 .contact,
 .projects-error,
+.blog-error,
 .not-found {
   padding-bottom: 4.5rem;
 }
@@ -533,7 +541,8 @@
 }
 
 .not-found a,
-.projects-error a {
+.projects-error a,
+.blog-error a {
   text-decoration: underline;
 }
 

@@ -16,7 +16,7 @@ function NewBlog() {
     }
 
     return (
-        <div className="new-blog">
+        <div className="blog">
             {blogPosts.toReversed().map((blogPost:any) => {
                 // <NavLink to={blogPost.id.toString()} key={blogPost.id}>
                 const slug = slugify(blogPost.Title, { lower: true, replacement: "_" })
@@ -45,8 +45,8 @@ export const blogPostsLoader = async () => {
     // return response.json()
 
     try {
-        const response = await database.listDocuments("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08")
-        // ("databaseId", "collectionId") Add correct collectionId for blog posts
+        const response = await database.listDocuments("66a2de2e00117b4ed64f", "66c135400034ed3eff4a")
+        // ("databaseId", "collectionId")
         return response.documents
     } catch (error) {
         throw Error("Could not fetch the list of blog posts.")
