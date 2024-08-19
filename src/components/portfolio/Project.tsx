@@ -7,36 +7,8 @@ function Project() {
 
     const projectId = slugId?.split("-").pop()
 
-    // const projectImages = [
-    //     {
-    //         id: "66a42cf30017d026c701",
-    //         image: Coffeshop,
-    //     },
-    //     {
-    //         id: "66a42f5e003e71e6b4e6",
-    //         image: CoffeshopLight,
-    //     }
-    // ]
-
-    // let imageUrl = ""
-
-    // function image() {
-    //     const projectImageObject = projectImages.find(projectImage => {
-    //         return projectImage.id === id
-    //     })
-
-    //     if (projectImageObject) {
-    //         // console.log("It works")
-    //         imageUrl = projectImageObject.image
-    //         return projectImageObject.image
-    //     }
-    // }
-
-    // image()
-
     return (
         <div className="project" id={projectId}>
-            {/* <img className="project-image" src={imageUrl} alt="Project image"></img> */}
             <a className="project-title-link" href={projectInfo.Link} target="_blank">
                 {projectInfo.Title}
             </a>

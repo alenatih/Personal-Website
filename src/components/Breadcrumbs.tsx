@@ -14,7 +14,7 @@ function Breadcrumbs() {
 
             if (isSlugWithId) {
                 // Extract the title part of the crumb
-                displayCrumb = crumb.split("_").slice(0, -1).join("_")
+                displayCrumb = crumb.split("-").slice(0, -1).join("_")
             } else {
                 displayCrumb = crumb
             }
