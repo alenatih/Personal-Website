@@ -1,4 +1,6 @@
 import { Form, redirect, useActionData } from "react-router-dom"
+import { database } from "../appwriteConfig.ts"
+import { ID } from "appwrite"
 
 function Contact() {
     const data:any = useActionData()
@@ -73,13 +75,31 @@ export const contactAction = async ({request}:any) => {
 
     console.log(submission)
 
+    // if (submission.message.length < 10) {
+    //     alert("Please write a message longer than 10 characters.")
+    //     return {error: "Please write a message longer than 10 characters."}
+    // }
+
     // Send a post request
 
-    if (submission.message.length < 10) {
-        alert("Please write a message longer than 10 characters.")
-        return {error: "Please write a message longer than 10 characters."}
-    }
+    try {
+        // Save the submission to Appwrite
+        const response = await database.createDocument(
+            "66a2de2e00117b4ed64f",       // My database ID
+            "66c3d0d4003520e61640",       // Collection ID
+            ID.unique(),                  // Generates a unique ID for the document
+            submission                    // The data to be stored
+        )
 
-    // Redirect a user
-    return redirect("/")
+        // console.log("Document created with ID:", response.$id)
+
+        // Redirect a user after successful submission
+        // return redirect("/")
+
+        return response
+
+    } catch (error) {
+        console.error("Failed to create a document:", error)
+        return { error: "There was a problem submitting your mesage. Please try again later." }
+    }
 }
