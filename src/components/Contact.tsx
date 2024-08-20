@@ -74,7 +74,7 @@ export const contactAction = async ({request}:any) => {
         message: data.get("message")
     }
 
-    console.log(submission)
+    // console.log(submission)
 
     // if (submission.message.length < 10) {
     //     alert("Please write a message longer than 10 characters.")
