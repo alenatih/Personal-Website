@@ -453,20 +453,13 @@
   box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
 }
 
-/* .about-me-log-button {
-  color: whitesmoke;
+.form-submit-button:hover {
+  color: #F7EFE2;
   background-color: cornflowerblue;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 0.5rem;
-} */
+  box-shadow: 0 0 0.25rem 0.1125rem #B4C4FC;
+}
 
 /* Images */
-
-/* .project-image {
-  width: 40%;
-} */
 
 .home-image {
   width: 100%;
@@ -525,6 +518,12 @@
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
+}
+
+.view-work-link:hover {
+  color: #F7EFE2;
+  background-color: cornflowerblue;
+  box-shadow: 0 0 0.25rem 0.1125rem #B4C4FC;
 }
 
 .project-live-link,
