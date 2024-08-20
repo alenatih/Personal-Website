@@ -97,6 +97,8 @@ export const contactAction = async ({request}:any) => {
         // Redirect a user after successful submission
         // return redirect("/")
 
+        alert(`Thank you, ${submission.name} ❤️ I will contact you!`)
+
         return response
 
     } catch (error) {

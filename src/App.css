@@ -675,7 +675,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* gap: 4.5rem; */
+    padding: 0 7.5rem 4.5rem;
   }
 
   .contact-form-container {
