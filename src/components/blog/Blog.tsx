@@ -2,8 +2,21 @@ import { NavLink, useLoaderData } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
 import slugify from "slugify"
 
+interface BlogPost {
+    $id: string;
+    $collectionId: string;
+    $createdAt: string;
+    $databaseId: string;
+    $permissions: string[];
+    $tenant: string;
+    $updatedAt: string;
+    Title: string;
+    Text: string;
+    [key: string]: any; // Index signature to allow for additional properties
+}
+
 function NewBlog() {
-    const blogPosts:any = useLoaderData()
+    const blogPosts = useLoaderData() as BlogPost[] // Type the loader data as an array of BlogPost objects
 
     // console.log(blogPosts)
 
@@ -17,7 +30,7 @@ function NewBlog() {
 
     return (
         <div className="blog">
-            {blogPosts.toReversed().map((blogPost:any) => {
+            {blogPosts.slice().reverse().map((blogPost: BlogPost) => {
                 // <NavLink to={blogPost.id.toString()} key={blogPost.id}>
                 const slug = slugify(blogPost.Title, { lower: true, replacement: "_" })
                 return (
@@ -47,7 +60,7 @@ export const blogPostsLoader = async () => {
     try {
         const response = await database.listDocuments("66a2de2e00117b4ed64f", "66c135400034ed3eff4a")
         // ("databaseId", "collectionId")
-        return response.documents
+        return response.documents as BlogPost[] // Type the response as an array of BlogPost objects
     } catch (error) {
         throw Error("Could not fetch the list of blog posts.")
     }

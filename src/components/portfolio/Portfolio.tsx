@@ -17,7 +17,6 @@ interface Project {
     [key: string]: any; // Index signature to allow for additional properties
 }
 
-
 function Portfolio() {
     const projects = useLoaderData() as Project[] // Type the loader data as an array of Project objects
 

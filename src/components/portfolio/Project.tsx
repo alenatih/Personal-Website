@@ -18,7 +18,6 @@ interface Project {
 
 function Project() {
     const { slugId } = useParams()
-    // const projectInfo:any = useLoaderData()
     const projectInfo = useLoaderData() as Project
 
     const projectId = slugId?.split("-").pop()
