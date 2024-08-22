@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom"
+import { LoaderFunctionArgs, useLoaderData, useParams } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
 
 interface Project {
@@ -16,7 +16,13 @@ interface Project {
     [key: string]: any; // Index signature to allow for additional properties
 }
 
+// interface Params {
+//     slugId: string;
+//     [key: string]: any; // Index signature to allow for additional properties
+// }
+
 function Project() {
+    // const { slugId } = useParams<Params>() // Type the useParams hook
     const { slugId } = useParams()
     const projectInfo = useLoaderData() as Project
 
@@ -43,7 +49,8 @@ function Project() {
 export default Project
 
 // Loader function
-export const projectInfoLoader = async ({params}:any) => {
+// export const projectInfoLoader = async ({params}: { params: Params }) => {
+    export const projectInfoLoader = async ({params}: LoaderFunctionArgs) => {
     const { slugId } = params
 
     const projectId = slugId?.split("-").pop()
@@ -57,9 +64,14 @@ export const projectInfoLoader = async ({params}:any) => {
 
     // return response.json()
 
+    if (!projectId) {
+        throw new Error("Project ID not found")
+    }
+
     try {
         const response = await database.getDocument("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08", projectId)
         // ("databaseId", "collectionId")
+        // A non-null assertion (projectId!) guarantees that projectId is not null or undefined when used
         return response as Project
     } catch (error) {
         throw Error("Could not find this project.")
