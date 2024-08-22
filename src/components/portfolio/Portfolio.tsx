@@ -2,8 +2,24 @@ import { NavLink, useLoaderData } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
 import slugify from "slugify"
 
+interface Project {
+    $id: string;
+    $collectionId: string;
+    $createdAt: string;
+    $databaseId: string;
+    $permissions: string[];
+    $tenant: string;
+    $updatedAt: string;
+    Title: string;
+    Description: string;
+    GitHubLink: string;
+    Link: string;
+    [key: string]: any; // Index signature to allow for additional properties
+}
+
+
 function Portfolio() {
-    const projects:any = useLoaderData()
+    const projects = useLoaderData() as Project[] // Type the loader data as an array of Project objects
 
     // console.log(projects)
 
@@ -17,8 +33,10 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            {projects.toReversed().map((project:any) => {
-                // <NavLink to={project.id.toString()} key={project.id}>
+            {/* {projects.toReversed().map((project: Project) => { */}
+            {/* Use slice to create a copy of the array, then reverse it */}
+            {projects.slice().reverse().map((project: Project) => {
+                {/* // <NavLink to={project.id.toString()} key={project.id}> */}
                 const slug = slugify(project.Title, { lower: true, replacement: "_" })
                 return (
                     <NavLink to={`${slug}-${project.$id}`} key={project.$id}>
@@ -47,7 +65,7 @@ export const projectsLoader = async () => {
     try {
         const response = await database.listDocuments("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08")
         // ("databaseId", "collectionId")
-        return response.documents
+        return response.documents as Project[] // Type the response as an array of Project objects
     } catch (error) {
         throw Error("Could not fetch the list of projects.")
     }
