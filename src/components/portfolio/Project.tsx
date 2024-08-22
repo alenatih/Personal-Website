@@ -1,9 +1,25 @@
 import { useLoaderData, useParams } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
 
+interface Project {
+    $id: string;
+    $collectionId: string;
+    $createdAt: string;
+    $databaseId: string;
+    $permissions: string[];
+    $tenant: string;
+    $updatedAt: string;
+    Title: string;
+    Description: string;
+    GitHubLink: string;
+    Link: string;
+    [key: string]: any; // Index signature to allow for additional properties
+}
+
 function Project() {
     const { slugId } = useParams()
-    const projectInfo:any = useLoaderData()
+    // const projectInfo:any = useLoaderData()
+    const projectInfo = useLoaderData() as Project
 
     const projectId = slugId?.split("-").pop()
 
@@ -45,7 +61,7 @@ export const projectInfoLoader = async ({params}:any) => {
     try {
         const response = await database.getDocument("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08", projectId)
         // ("databaseId", "collectionId")
-        return response
+        return response as Project
     } catch (error) {
         throw Error("Could not find this project.")
     }
