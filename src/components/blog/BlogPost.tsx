@@ -9,7 +9,7 @@ function BlogPost() {
 
     return (
         <div className="blog-post" id={blogPostId}>
-            <h4 className="blog-post-title">
+            <h4 className="blog-post-page-title">
                 {blogPostInfo.Title}
             </h4>
             <p className="blog-post-text">{blogPostInfo.Text}</p>
