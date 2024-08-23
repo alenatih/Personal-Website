@@ -32,7 +32,6 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            {/* {projects.toReversed().map((project: Project) => { */}
             {/* Use slice to create a copy of the array, then reverse it */}
             {projects.slice().reverse().map((project: Project) => {
                 {/* // <NavLink to={project.id.toString()} key={project.id}> */}

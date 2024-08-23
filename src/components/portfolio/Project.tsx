@@ -71,7 +71,6 @@ export default Project
     try {
         const response = await database.getDocument("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08", projectId)
         // ("databaseId", "collectionId")
-        // A non-null assertion (projectId!) guarantees that projectId is not null or undefined when used
         return response as Project
     } catch (error) {
         throw Error("Could not find this project.")
