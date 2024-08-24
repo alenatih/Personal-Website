@@ -4,6 +4,8 @@
 
 Personal website of Alena Tikhomirova, a Frontend developer.
 
+You can contact me at alyonatihomirova9@gmail.com, see my social links, or fill out the contact form.
+
 <!-- ## Features
 
 - **Feature:** description.
