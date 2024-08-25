@@ -1,10 +1,22 @@
 // import { Form, redirect, useActionData } from "react-router-dom"
-import { Form, useActionData } from "react-router-dom"
+import { Form, useActionData, ActionFunctionArgs } from "react-router-dom"
 import { database } from "../appwriteConfig.ts"
 import { ID } from "appwrite"
 
+// Define types for the action data
+interface ContactActionData {
+    error?: string;
+    success?: boolean;
+}
+
+interface SubmissionData {
+    name: string;
+    email: string;
+    message: string;
+}
+
 function Contact() {
-    const data:any = useActionData()
+    const data = useActionData() as ContactActionData
 
     return (
         <div className="contact">
@@ -65,13 +77,13 @@ function Contact() {
 
 export default Contact
 
-export const contactAction = async ({request}:any) => {
+export const contactAction = async ({request}: ActionFunctionArgs) => {
     const data = await request.formData()
 
-    const submission = {
-        name: data.get("name"),
-        email: data.get("email"),
-        message: data.get("message")
+    const submission: SubmissionData = {
+        name: data.get("name") as string,
+        email: data.get("email") as string,
+        message: data.get("message") as string
     }
 
     // console.log(submission)
@@ -103,6 +115,6 @@ export const contactAction = async ({request}:any) => {
 
     } catch (error) {
         console.error("Failed to create a document:", error)
-        return { error: "There was a problem submitting your mesage. Please try again later." }
+        return { error: "There was a problem submitting your message. Please try again later." }
     }
 }
