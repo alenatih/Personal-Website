@@ -11,7 +11,7 @@ function RootLayout() {
     })
 
     // Ref for the mobile menu to detect clicks outside of it
-    const menuRef = useRef<HTMLElement | null>(null)
+    const menuRef = useRef<HTMLDivElement | null>(null)
 
     const checkScreenSize = () => {
         setIsMobile(() => {
@@ -36,8 +36,12 @@ function RootLayout() {
     }
 
     useEffect(() => {
-        const handleClickOutside = (event: any) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+            if (
+                menuRef.current &&
+                event.target instanceof Node &&
+                !menuRef.current.contains(event.target)
+            ) {
                 setIsMobileMenuOpen(false)
             }
         }
@@ -45,19 +49,16 @@ function RootLayout() {
         // Add event listener when the menu is open
         if (isMobileMenuOpen) {
             document.addEventListener("mousedown", handleClickOutside)
-            document.addEventListener("touchhstart", handleClickOutside )
-        } else {
-            document.removeEventListener("mousedown", handleClickOutside)
-            document.removeEventListener("touchhstart", handleClickOutside )
+            document.addEventListener("touchstart", handleClickOutside )
         }
 
         // Clean up event listeners on unmount of the component or when the menu closes
         // to prevent memory leaks or unwanted behavior
         return () => {
             document.removeEventListener("mousedown", handleClickOutside)
-            document.removeEventListener("touchhstart", handleClickOutside )
+            document.removeEventListener("touchstart", handleClickOutside )
         }
-    }, [isMobileMenuOpen])
+    }, [isMobileMenuOpen, menuRef])
 
 
     return (
