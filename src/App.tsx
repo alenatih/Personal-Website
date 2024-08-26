@@ -9,6 +9,8 @@ import {
   RouterProvider
 } from "react-router-dom"
 
+import { ROUTE } from "./components/constants.ts"
+
 // pages
 import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
@@ -22,15 +24,12 @@ import Contact, { contactAction } from "./components/Contact.tsx"
 import NotFound from "./components/NotFound.tsx"
 import ProjectsError from "./components/portfolio/ProjectsError.tsx"
 import BlogError from "./components/blog/BlogError.tsx"
+import Footer from "./components/Footer.tsx"
 
 // layouts
 import RootLayout from "./layouts/RootLayout.tsx"
 import PortfolioLayout from "./layouts/PortfolioLayout.tsx"
 import BlogLayout from "./layouts/BlogLayout.tsx"
-
-import Footer from "./components/Footer.tsx"
-
-import { ROUTE } from "./components/constants.ts"
 
 import "./App.css"
 
