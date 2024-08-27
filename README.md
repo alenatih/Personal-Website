@@ -26,6 +26,10 @@ You can contact me at alyonatihomirova9@gmail.com, see my social links, or fill 
 - Appwrite
 - Font Awesome CDN
 
+## Database
+
+Projects and blog posts data is stored in the Appwrite Database.
+
 ## Contributors
 
 - Alena Tikhomirova
