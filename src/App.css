@@ -649,8 +649,7 @@
 
   .portfolio {
     display: grid;
-    grid-template-columns: auto auto auto;
-    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: auto auto;
     column-gap: 4.5rem;
   }
 
