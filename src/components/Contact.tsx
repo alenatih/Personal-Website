@@ -49,19 +49,33 @@ function Contact() {
                 <h4 className="contact-title">Contact me</h4>
 
                 <Form className="contact-form" method="post" action="/contact">
-                    <label>
+                    <label htmlFor="input-name">
                         Your name
-                        <input className="input-name" type="text" name="name" required />
+                        <input
+                            className="input-name"
+                            id="input-name"
+                            type="text"
+                            name="name"
+                            required />
                     </label>
 
-                    <label>
+                    <label htmlFor="input-email">
                         Your email
-                        <input className="input-email" type="email" name="email" required />
+                        <input
+                            className="input-email"
+                            id="input-email"
+                            type="email"
+                            name="email"
+                            required />
                     </label>
 
-                    <label>
+                    <label htmlFor="input-message">
                         Your message
-                        <textarea className="input-message" name="message" required ></textarea>
+                        <textarea
+                            className="input-message"
+                            id="input-message"
+                            name="message"
+                            required ></textarea>
                     </label>
 
                     <button className="form-submit-button">Submit</button>
