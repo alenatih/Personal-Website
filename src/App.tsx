@@ -19,6 +19,7 @@ import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
 import Skills from "./components/Skills.tsx"
 import Resources from "./components/Resources.tsx"
 import Blog, { blogPostsLoader } from "./components/blog/Blog.tsx"
+import BlogPostOneYear from "./components/blog/BlogPostOneYear.tsx"
 import BlogPost, { blogPostInfoLoader } from "./components/blog/BlogPost.tsx"
 import Contact, { contactAction } from "./components/Contact.tsx"
 import NotFound from "./components/NotFound.tsx"
@@ -62,6 +63,10 @@ const router = createBrowserRouter(
     //     element={<BlogPost />}
     //     loader={blogPostInfoLoader}
     //     />
+    //   <Route
+    //     path="blog-post-one-year"
+    //     element={<BlogPostOneYear />}
+    //    />
     // </Route>
     // <Route path="/resources" element={<Resources />} />
     // <Route path="/contact" element={<Contact />} action={contactAction} />
@@ -95,6 +100,10 @@ const router = createBrowserRouter(
           element={<BlogPost />}
           loader={blogPostInfoLoader}
           />
+        <Route
+          path="blog-post-one-year"
+          element={<BlogPostOneYear />}
+        />
       </Route>
       <Route path={ROUTE.resources} element={<Resources />} />
       <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />

@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 function Blog() {
     return (
@@ -15,6 +15,10 @@ function Blog() {
                 right now, by getting up and getting started."
             </p>
             <p className="blog-quote-author">- Ryan Holiday</p>
+
+            <NavLink to="blog-post-one-year">
+                <h4 className="blog-post-title">Blog post 0</h4>
+            </NavLink>
 
             <Outlet />
         </div>
