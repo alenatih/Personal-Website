@@ -1,9 +1,16 @@
+import ViewCode from "../../assets/night-code-with-a-view.png"
+
 function BlogPostOneYear() {
     return (
         <div className="blog-post-one-year">
             <h4 className="blog-post-page-one-year-title">
                 Lessons I learned in a year of learning to program.
             </h4>
+            <img 
+                className="blog-post-image"
+                src={ViewCode}
+                alt="Night coding on a laptop with a river view">
+            </img>
             <p className="blog-post-text">
                 These days I’m about 1 year into my Frontend learning and building journey.
             </p>

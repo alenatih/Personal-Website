@@ -115,7 +115,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  margin: 2.5rem 0 3rem;
+  margin: 4rem 0 4rem;
 }
 
 .blog-post-text {
@@ -504,6 +504,14 @@
   box-shadow: 0 0 2.5rem 0.1125rem #B4C4FC;
 }
 
+.blog-post-image {
+  align-self: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2.5rem 0.1125rem #B4C4FC;
+  margin: 0 0 4rem;
+}
+
 .error-image {
   width: 100%;
   margin-top: 2rem;
@@ -619,6 +627,10 @@
   .skills-text,
   .blog-quote-text {
     width: 60%;
+  }
+
+  .blog-post-page-one-year-title {
+    margin-bottom: 4.5rem;
   }
 
   .about-me-title.mobile {
@@ -739,6 +751,11 @@
 
   .about-me-image {
     width: 70%;
+  }
+
+  .blog-post-image {
+    width: 70%;
+    margin-bottom: 4.5rem;
   }
 
   .error-image {
