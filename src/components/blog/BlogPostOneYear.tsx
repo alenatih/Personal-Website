@@ -11,6 +11,9 @@ function BlogPostOneYear() {
                 src={ViewCode}
                 alt="Night coding on a laptop with a river view">
             </img>
+            <p className="blog-post-text blog-post-date">
+                12th september, 2024
+            </p>
             <p className="blog-post-text">
                 These days I’m about 1 year into my Frontend learning and building journey.
             </p>
