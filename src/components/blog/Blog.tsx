@@ -30,6 +30,10 @@ function NewBlog() {
 
     return (
         <div className="blog">
+            <NavLink to="blog-post-one-year">
+                <h4 className="blog-post-title">Blog post 0</h4>
+            </NavLink>
+            
             {blogPosts.slice().reverse().map((blogPost: BlogPost) => {
                 // <NavLink to={blogPost.id.toString()} key={blogPost.id}>
                 const slug = slugify(blogPost.Title, { lower: true, replacement: "_" })

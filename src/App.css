@@ -26,7 +26,6 @@
 .project-title-link,
 .blog-quote-title,
 .blog-post-title,
-.blog-post-page-title,
 .contact-title,
 .social-links-title,
 .projects-error-title,
@@ -104,6 +103,29 @@
 
 .blog-quote-text {
   text-align: center;
+}
+
+.blog-post-page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.blog-post-page-one-year-title {
+  color: cornflowerblue;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2.5rem 0 3rem;
+}
+
+.blog-post-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.blog-post-text-span {
+  color: cornflowerblue;
 }
 
 .contact-title {
@@ -215,6 +237,7 @@
 .home,
 .about-me,
 .skills,
+.portfolio-layout,
 .blog,
 .resources,
 .contact,
@@ -319,6 +342,14 @@
   /* border: 1px solid #F7EFE2; */
   border-radius: 0.5rem;
   box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
+}
+
+.blog-post-one-year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  width: 100%;
 }
 
 .resource {
@@ -536,6 +567,12 @@
   margin-right: 1rem;
 }
 
+.blog-post-one-year-link {
+  color: cornflowerblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .resources a {
   text-decoration: underline;
 }
@@ -651,10 +688,12 @@
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 4.5rem;
+    margin-top: 2rem;
   }
 
   .project,
-  .blog-post {
+  .blog-post,
+  .blog-post-one-year {
     width: 60%;
   }
 
