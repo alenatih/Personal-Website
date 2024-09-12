@@ -113,8 +113,9 @@ function BlogPostOneYear() {
                 I hope to be able to do this during Hacktoberfest soon.
             </p>
             <p className="blog-post-text">
-                <span className="blog-post-text-span">8. Looking for my first tech job.</span> 
-                Why haven’t I found my first tech job yet? 
+                <span className="blog-post-text-span">
+                    8. Looking for my first tech job.
+                </span> Why haven’t I found my first tech job yet? 
                 I haven’t started looking for it yet 😄 
                 This is probably my error and I need to practice passing interviews 
                 and get real feedback from companies as soon as possible.
