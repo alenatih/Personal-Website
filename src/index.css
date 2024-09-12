@@ -20,7 +20,8 @@
   background-color: #242424; */
 
   /* Dark mode */
-  --text-color-light: rgba(255, 255, 255, 0.87);
+  /* --text-color-light: rgba(255, 255, 255, 0.87); */
+  --text-color-light: whitesmoke;
   --background-color-dark: #242424;
 
   /* Light mode */

@@ -48,10 +48,11 @@ function BlogPostOneYear() {
                 so much that I soon decided to change a career and work in tech.
             </p>
             <p className="blog-post-text">
-                Here are the lessons I learned about learning and building projects this year.
+                Here are the lessons I learned about learning and building projects this year,
+                and my other thoughts.
             </p>
             <p className="blog-post-text">
-                1. <span className="blog-post-text-span">I love to learn by building.</span> And doing so 
+                <span className="blog-post-text-span">1. I love to learn by building.</span> And doing so 
                 would be my biggest recommendation 
                 (if you’d ask me) for learning efficiently.
             </p>
@@ -65,62 +66,67 @@ function BlogPostOneYear() {
                 As a bonus, this project can become profitable for you!
             </p>
             <p className="blog-post-text">
-                2. <span className="blog-post-text-span">Try different methods to learn.</span> When 
+                <span className="blog-post-text-span">2. Try different methods to learn.</span> When 
                 I’m not coding for a learning or building session, 
                 I read, watch, or listen to something useful and exciting about tech. 
-                I also do this when I do my make-up, cook, and wash dishes 😄 
+                I also do this when I do my make-up, cook, wash dishes, and so on 😄 
                 Though the best way to learn to code is to code and build things.
             </p>
             <p className="blog-post-text">
-                3. <span className="blog-post-text-span">Find a community</span> (or build your own) 
+                <span className="blog-post-text-span">3. Find a community</span> (or build your own) 
                 for support, learning, and inspiration. 
                 Try coffee chats to talk with people who are also passionate 
                 about the same things you are. 
                 Post about what you learn and build on social media. 
-                X(Twitter) works great for me, 
+                X (Twitter) works great for me, 
                 but you may find that another platform is useful for you.
             </p>
             <p className="blog-post-text">
-                4. <span className="blog-post-text-span">Doing what I love.</span> There may be 
+                <span className="blog-post-text-span">4. Doing what I love.</span> There may be 
                 different reasons why you want to work in the tech industry 
                 and learn software development. 
                 But you will make better progress and have more fun along the way 
                 if you love what you do. (I’m happy to say that I do.)
             </p>
             <p className="blog-post-text">
-                5. <span className="blog-post-text-span">LeetCode.</span> Learning DSA 
+                <span className="blog-post-text-span">5. LeetCode.</span> Learning DSA 
                 can not only help you pass interviews, 
                 but also, and more importantly, improve your problem-solving ability. 
                 But I think it’s more useful and rewarding 
                 to build real-world products and solve your users’ problems.
             </p>
             <p className="blog-post-text">
-                6. <span className="blog-post-text-span">CS50x.</span> I started 
+                <span className="blog-post-text-span">6. <a
+                    className="blog-post-one-year-link"
+                    href="https://cs50.harvard.edu/x/2024/"
+                    target="_blank">
+                    CS50x.
+                    </a></span> I started 
                 and will do it when I have time. 
                 It’s great to learn fundamentals and get inspired by the Harvard atmosphere 🤩
             </p>
             <p className="blog-post-text">
-                7. <span className="blog-post-text-span">Open source.</span> Contributing 
+                <span className="blog-post-text-span">7. Open source.</span> Contributing 
                 to open-source projects is a great way to get to work
                 with a real-world codebase 
                 and learn from other, more experienced developers. 
                 I hope to be able to do this during Hacktoberfest soon.
             </p>
             <p className="blog-post-text">
-                8. <span className="blog-post-text-span">Looking for my first tech job.</span> 
+                <span className="blog-post-text-span">8. Looking for my first tech job.</span> 
                 Why haven’t I found my first tech job yet? 
                 I haven’t started looking for it yet 😄 
                 This is probably my error and I need to practice passing interviews 
                 and get real feedback from companies as soon as possible.
             </p>
             <p className="blog-post-text">
-                9. <span className="blog-post-text-span">
-                    A startup, or indie-hacking.
+                <span className="blog-post-text-span">
+                    9. A startup, or indie-hacking.
                     </span> I still dream of building and marketing my own product 
                 that will be valuable to people and businesses.
             </p>
             <p className="blog-post-text">
-                10. <span className="blog-post-text-span">Time and progress.</span> Progress 
+                <span className="blog-post-text-span">10. Time and progress.</span> Progress 
                 may seem slow to you, but everyone is different. 
                 You have your own unique journey. 
                 As long as you learn and build something every day, 
@@ -129,7 +135,7 @@ function BlogPostOneYear() {
                 to do at this time a year ago.
             </p>
             <p className="blog-post-text">
-                11. <span className="blog-post-text-span">Time and progress.</span> As obvious 
+                <span className="blog-post-text-span">11. Physical and mental health.</span> As obvious 
                 as it sounds, you will get more done and will be able to focus better 
                 if you sleep well and exercise. 
                 Going for a walk is a great way to solve a problem in your code 
@@ -147,7 +153,7 @@ function BlogPostOneYear() {
                 Scrimba is awesome! The thing I love most about this platform 
                 is that you build your solo projects yourself, without following a tutorial. 
                 The community is also great, 
-                I made some really awesome Internet friends 😄
+                I made some really awesome online friends 😄
             </p>
             <p className="blog-post-text">
                 There are a lot of things that make it harder for me, 

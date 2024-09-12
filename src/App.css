@@ -130,7 +130,8 @@
 }
 
 .blog-post-text-span {
-  color: cornflowerblue;
+  /* color: cornflowerblue; */
+  font-weight: 550;
 }
 
 .contact-title {
@@ -513,7 +514,7 @@
   align-self: center;
   width: 100%;
   border-radius: 0.5rem;
-  box-shadow: 0 0 2.5rem 0.1125rem #B4C4FC;
+  /* box-shadow: 0 0 0.4rem 0.1125rem #B4C4FC; */
   margin: 0 0 4rem;
 }
 
@@ -582,6 +583,7 @@
 
 .blog-post-one-year-link {
   color: cornflowerblue;
+  font-weight: 550;
   text-decoration: underline;
   cursor: pointer;
 }
