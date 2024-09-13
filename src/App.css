@@ -50,7 +50,12 @@
 }
 
 .project-title-link {
+  font-weight: 550;
   cursor: pointer;
+}
+
+.project-description {
+  line-height: 1.7;
 }
 
 .about-me-title.mobile {
@@ -63,6 +68,7 @@
 
 .home-text {
   text-align: center;
+  line-height: 1.7;
   margin-bottom: 2rem;
 }
 
@@ -75,10 +81,15 @@
 }
 
 .home-text:last-of-type {
-  margin-top: -0.5rem;
+  margin-top: -0.75rem;
+}
+
+.about-me-text {
+  line-height: 1.7;
 }
 
 .skills-text {
+  line-height: 1.7;
   margin-top: 1rem;
 }
 
@@ -140,6 +151,10 @@
 
 .social-links-title {
   margin: 1rem 0;
+}
+
+.resource-text {
+  line-height: 1.7;
 }
 
 .community-text {
