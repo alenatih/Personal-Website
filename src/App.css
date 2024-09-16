@@ -126,7 +126,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  margin: 2.5rem 0 4rem;
+  margin: 2.5rem 0 3.5rem;
 }
 
 .blog-post-text {
@@ -649,10 +649,6 @@
   .skills-text,
   .blog-quote-text {
     width: 60%;
-  }
-
-  .blog-post-page-one-year-title {
-    margin-bottom: 4.5rem;
   }
 
   .about-me-title.mobile {

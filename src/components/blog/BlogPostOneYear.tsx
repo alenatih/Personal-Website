@@ -4,7 +4,7 @@ function BlogPostOneYear() {
     return (
         <div className="blog-post-one-year">
             <h4 className="blog-post-page-one-year-title">
-                Lessons I learned in a year of learning to program
+                Lessons I Learned in a Year of Learning to Program
             </h4>
             <img 
                 className="blog-post-image"
