@@ -34,7 +34,7 @@
 
 .contact-title,
 .social-links-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .project-title,
@@ -153,7 +153,7 @@
 }
 
 .social-links-title {
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
 }
 
 .resource-text {
@@ -670,6 +670,10 @@
 
   .about-me-title.desktop {
     display: block;
+  }
+
+  .social-links-title {
+    margin: 1rem 0;
   }
 
   .footer-text {
