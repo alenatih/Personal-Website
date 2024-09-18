@@ -649,7 +649,6 @@
   /* .home-title, */
   .about-me-title,
   .skills-title,
-  .portfolio-title,
   .resources-title,
   .blog-title {
     font-size: 2rem;
@@ -663,6 +662,10 @@
   .home-text {
     font-size: 1.125rem;
     width: 40%;
+  }
+
+  .portfolio-title {
+    font-size: 2.5rem;
   }
 
   /* .home-text:first-of-type {
