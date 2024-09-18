@@ -15,10 +15,14 @@
 .home-title,
 .about-me-title,
 .skills-title,
-.portfolio-title,
 .resources-title,
 .blog-title {
   font-size: 1.75rem;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -39,6 +43,7 @@
 
 .project-title,
 .blog-post-title {
+  text-align: center;
   padding: 1rem 1.5rem;
   margin-top: 1rem;
   border: 1px solid #F7EFE2;
@@ -53,6 +58,7 @@
 }
 
 .project-title-link {
+  text-align: center;
   font-weight: 550;
   cursor: pointer;
 }
@@ -67,6 +73,13 @@
 
 .about-me-title.desktop {
   display: none;
+}
+
+.home-text,
+.about-me-text,
+.resource-text,
+.skills-text {
+  font-size: 1.125rem;
 }
 
 .home-text {
@@ -606,7 +619,8 @@
   cursor: pointer;
 }
 
-.resources a {
+.resources-link {
+  font-size: 1.125rem;
   text-decoration: underline;
 }
 
