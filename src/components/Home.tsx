@@ -22,7 +22,7 @@ function Home() {
                     <p className="home-text">
                         My goal is to be not just a Frontend developer, 
                         but a software engineer who can work with any technology 
-                        and solve problems.
+                        and solves business problems.
                     </p>
 
                     <p className="home-text">
