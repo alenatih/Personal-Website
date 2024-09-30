@@ -34,6 +34,6 @@ If you have ideas to enhance this project or encounter any issues, feel free to 
 
 For inquiries or feedback, please contact me at alyonatihomirova9@gmail.com.
 
-<!-- ## Acknowledgments
+## License
 
-Acknowledgments. -->
+MIT License
