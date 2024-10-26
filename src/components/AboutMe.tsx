@@ -33,8 +33,9 @@ function AboutMe() {
                 <p className="about-me-text">I’m currently taking the Frontend Developer Career Path course on Scrimba 
                     and working towards becoming a Frontend Developer.
                 </p>
-                <p className="about-me-text">My main skills include HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, 
-                    React Router, Vite, Vercel, Firebase, and Figma. Learning React, TypeScript, and Tailwind CSS.
+                <p className="about-me-text">My main skills include HTML, CSS, JavaScript, TypeScript, 
+                React, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, Appwrite, 
+                Firebase, Tailwind CSS, and Figma. Learning Next.js.
                 </p>
                 <p className="about-me-text">I love design, UX/UI, books, languages, and AI. 
                     I enjoy building web apps, learning and using new technologies.

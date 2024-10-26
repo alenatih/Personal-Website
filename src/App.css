@@ -332,6 +332,10 @@
   justify-content: center;
 } */
 
+.skills {
+  align-items: initial;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -738,6 +742,10 @@
   .blog,
   .resources {
     padding: 0 4.5rem 4.5rem;
+  }
+
+  .skills {
+    align-items: center;
   }
 
   /* .about-me-text-container {
