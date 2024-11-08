@@ -26,17 +26,17 @@ function Contact() {
                 <h4 className="social-links-title">Nice to meet you!</h4>
 
                 <div className="social-links-container">
+                    <a href="https://github.com/AlenaTih" target="_blank">
+                        <i className="fa-brands fa-square-github"></i>
+                    </a>
                     <a href="https://x.com/Alennushkaa" target="_blank">
                         <i className="fa-brands fa-square-x-twitter"></i>
                     </a>
-                    <a href="https://www.youtube.com/@alenaatikh" target="_blank">
+                    {/* <a href="https://www.youtube.com/@alenaatikh" target="_blank">
                         <i className="fa-brands fa-square-youtube"></i>
-                    </a>
+                    </a> */}
                     <a href="https://www.instagram.com/allennushkaa/" target="_blank">
                         <i className="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/AlenaTih" target="_blank">
-                        <i className="fa-brands fa-square-github"></i>
                     </a>
                 </div>
 
