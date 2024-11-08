@@ -38,7 +38,12 @@ function Contact() {
                     <a href="https://www.instagram.com/allennushkaa/" target="_blank">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
-                    <a rel="me" href="https://mastodon.social/@AlenaTih" target="_blank">
+                    <a
+                        rel="me"
+                        href="https://mastodon.social/@AlenaTih"
+                        target="_blank"
+                        title="Mastodon"
+                    >
                         <i className="fa-brands fa-mastodon"></i>
                     </a>
                 </div>
