@@ -43,35 +43,6 @@ function Resources() {
                     I use Appwrite in this project to store information about my projects.
                 </p>
             </div>
-
-            <div className="resource">
-                <a
-                    className="resources-link"
-                    href="https://healthcheck.eddiehubcommunity.org/"
-                    target="_blank">
-                    HealthCheck
-                </a>
-                <p className="resource-text">
-                    — an awesome open-source project to use, learn from, and contribute to.
-                </p>
-
-                <a className="resources-link"
-                    href="https://github.com/EddieHubCommunity/HealthCheck"
-                    target="_blank">
-                    HealthCheck repository on GitHub
-                </a>
-
-                <p className="resource-text community-text">
-                    Also a great community about open source:
-                </p>
-                <a
-                    className="resources-link"
-                    href="https://github.com/EddieHubCommunity"
-                    target="_blank">
-                    EddieHub
-                </a>
-            </div>
-
         </div> 
     )
 }
