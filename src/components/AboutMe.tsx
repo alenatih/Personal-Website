@@ -30,17 +30,22 @@ function AboutMe() {
 
                 <h2 className="about-me-title desktop">About me</h2>
 
-                <p className="about-me-text">I’m currently taking the Frontend Developer Career Path course on Scrimba 
+                <p className="about-me-text">
+                    I’m currently taking the Frontend Developer Career Path course on Scrimba 
                     and working towards becoming a Frontend Developer.
                 </p>
-                <p className="about-me-text">My main skills include HTML, CSS, JavaScript, TypeScript, 
-                React, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, Appwrite, 
-                Firebase, Tailwind CSS, and Figma. Learning Next.js.
+                <p className="about-me-text">
+                    My main skills include HTML, CSS, JavaScript, TypeScript, 
+                    React, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, Appwrite, Firebase, 
+                    React Testing Library, Vitest, WebdriverIO, Tailwind CSS, and Figma. Learning Next.js.
                 </p>
-                <p className="about-me-text">I love design, UX/UI, books, languages, and AI. 
+                <p className="about-me-text">
+                    I love design, UX/UI, books, languages, and AI. 
                     I enjoy building web apps, learning and using new technologies.
                 </p>
-                <p className="about-me-text">I also enjoy doing aerial gymnastics on silks and lyra.</p>
+                <p className="about-me-text">
+                    I also enjoy doing aerial gymnastics on silks and lyra.
+                </p>
 
             </div>
 
