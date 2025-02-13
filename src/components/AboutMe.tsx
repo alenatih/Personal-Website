@@ -36,8 +36,9 @@ function AboutMe() {
                 </p>
                 <p className="about-me-text">
                     My main skills include HTML, CSS, JavaScript, TypeScript, 
-                    React, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, Appwrite, Firebase, 
-                    React Testing Library, Vitest, WebdriverIO, Tailwind CSS, and Figma. Learning Next.js.
+                    React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, 
+                    Appwrite, PostgreSQL, Supabase, Firebase, React Testing Library, Vitest, WebdriverIO, 
+                    Tailwind CSS, and Figma.
                 </p>
                 <p className="about-me-text">
                     I love design, UX/UI, books, languages, and AI. 
