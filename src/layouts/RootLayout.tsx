@@ -4,7 +4,6 @@ import Breadcrumbs from "../components/Breadcrumbs.tsx"
 import ToggleButton from "../components/ToggleButton.tsx"
 
 function RootLayout() {
-
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const [isMobile, setIsMobile] = useState(() => {
         return window.innerWidth < 600 ? true : false
@@ -76,7 +75,7 @@ function RootLayout() {
                                 className={`mobile-menu-opened ${isMobileMenuOpen ? "slide-in" : ""}`}
                             >
                                 <NavLink to="/" onClick={toggleMobileMenu}>Home</NavLink>
-                                <NavLink to="/aboutme" onClick={toggleMobileMenu}>About Me</NavLink>
+                                <NavLink to="/aboutme" onClick={toggleMobileMenu}>About me</NavLink>
                                 <NavLink to="/portfolio" onClick={toggleMobileMenu}>Portfolio</NavLink>
                                 <NavLink to="/skills" onClick={toggleMobileMenu}>Skills</NavLink>
                                 <NavLink to="/blog" onClick={toggleMobileMenu}>Blog</NavLink>
@@ -89,7 +88,7 @@ function RootLayout() {
                     ) :
                         (<nav className="nav">
                             <NavLink to="/">Home</NavLink>
-                            <NavLink to="/aboutme">About Me</NavLink>
+                            <NavLink to="/aboutme">About me</NavLink>
                             <NavLink to="/portfolio">Portfolio</NavLink>
                             <NavLink to="/skills">Skills</NavLink>
                             <NavLink to="/blog">Blog</NavLink>

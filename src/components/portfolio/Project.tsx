@@ -30,17 +30,31 @@ function Project() {
 
     return (
         <div className="project" id={projectId}>
-            <a className="project-title-link" href={projectInfo.Link} target="_blank">
+            <a
+                className="project-title-link"
+                href={projectInfo.Link}
+                target="_blank"
+                rel="noopener noreferrer">
                 {projectInfo.Title}
             </a>
             <p className="project-description">{projectInfo.Description}</p>
             <div className="project-links-container">
-                <a className="project-live-link" href={projectInfo.Link} target="_blank">
+                <a
+                    className="project-live-link"
+                    href={projectInfo.Link}
+                    target="_blank"
+                    rel="noopener noreferrer">
                     It's live here
                 </a>
-                <a className="project-github-link" href={projectInfo.GitHubLink} target="_blank">
-                    GitHub
-                </a>
+                {projectInfo.GitHubLink && (
+                    <a
+                        className="project-github-link"
+                        href={projectInfo.GitHubLink}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                )}
             </div>
         </div>
     )
