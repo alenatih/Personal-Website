@@ -9,7 +9,7 @@ import {
   RouterProvider
 } from "react-router-dom"
 
-import { ROUTE } from "./components/constants.ts"
+import { ROUTE } from "./constants.ts"
 
 // pages
 import Home from "./components/Home.tsx"

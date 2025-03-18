@@ -74,6 +74,13 @@ function RootLayout() {
                                 ref={menuRef}
                                 className={`mobile-menu-opened ${isMobileMenuOpen ? "slide-in" : ""}`}
                             >
+                            <div className="menu-header">
+                                <h3>Menu</h3>
+                                <i 
+                                    className="fa-solid fa-times close-icon" 
+                                    onClick={() => setIsMobileMenuOpen(false)}>
+                                </i>
+                            </div>
                                 <NavLink to="/" onClick={toggleMobileMenu}>Home</NavLink>
                                 <NavLink to="/aboutme" onClick={toggleMobileMenu}>About me</NavLink>
                                 <NavLink to="/portfolio" onClick={toggleMobileMenu}>Portfolio</NavLink>

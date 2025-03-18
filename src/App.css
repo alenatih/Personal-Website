@@ -36,6 +36,13 @@
   font-size: 1.25rem;
 }
 
+.home-title {
+  background: linear-gradient(90deg, #477FEB 0%, #E6C172 100%);
+  -webkit-background-clip: text; /* Makes the text take the gradient color */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .contact-title,
 .social-links-title {
   font-size: 1.5rem;
@@ -233,14 +240,30 @@
   height: 100%;
   width: 250px;
   gap: 20px;
-  padding: 4.5rem 1.25rem 1.25rem;
+  padding: 2.5rem 1.25rem 1.25rem;
   transform: translateX(-100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2); */
   z-index: 1000;
 }
 
 .mobile-menu-opened.slide-in {
   transform: translateX(0);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .main {
@@ -568,7 +591,8 @@
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  color: whitesmoke;
+  background-color: #2E5CB5;
 }
 
 .nav a.active {
