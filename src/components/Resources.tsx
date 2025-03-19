@@ -6,8 +6,9 @@ function Resources() {
             <div className="resource">
                 <a
                     className="resources-link"
-                    href="https://v2.scrimba.com/"
-                    target="_blank">
+                    href="https://scrimba.com/"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Scrimba
                 </a>
                 <p className="resource-text">
@@ -20,7 +21,8 @@ function Resources() {
                 <a
                     className="resources-link"
                     href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     React Router course by Net Ninja
                 </a>
                 <p className="resource-text">
@@ -32,7 +34,8 @@ function Resources() {
                 <a
                     className="resources-link"
                     href="https://appwrite.io/"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Appwrite
                 </a>
                 <p className="resource-text">
