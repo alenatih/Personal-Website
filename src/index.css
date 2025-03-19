@@ -67,6 +67,14 @@ body {
 
   color: var(--text-color-light);
   background-color: var(--background-color-dark);
+  /* background-image: radial-gradient(
+    circle at center,
+    rgba(71, 127, 235, 0.15) 0%,
+    transparent 70%
+  ); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .light-mode {
@@ -75,6 +83,14 @@ body {
 
   color: var(--text-color-dark);
   background-color: var(--background-color-light);
+  background-image: radial-gradient(
+    circle at center,
+    rgba(71, 127, 235, 0.15) 0%, /* Subtle blue glow */
+    transparent 70%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 /* Typography and icons */
