@@ -29,11 +29,6 @@ function AboutMe() {
             <div className="about-me-text-container">
 
                 <h2 className="about-me-title desktop">About me</h2>
-
-                <p className="about-me-text">
-                    I’m currently taking the Frontend Developer Career Path course on Scrimba 
-                    and working towards becoming a Frontend Developer.
-                </p>
                 <p className="about-me-text">
                     My main skills include HTML, CSS, JavaScript, TypeScript, 
                     React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, 
