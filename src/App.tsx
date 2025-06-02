@@ -32,6 +32,7 @@ import RootLayout from "./layouts/RootLayout.tsx"
 import PortfolioLayout from "./layouts/PortfolioLayout.tsx"
 import BlogLayout from "./layouts/BlogLayout.tsx"
 
+import { Analytics } from "@vercel/analytics/react"
 import "./App.css"
 
 const router = createBrowserRouter(
@@ -121,6 +122,7 @@ function App() {
         <RouterProvider router={router}/>
 
         <Footer />
+        <Analytics />
       </div>
   )
 }
