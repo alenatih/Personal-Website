@@ -337,7 +337,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0 0 4.5rem 0;
+  padding: 0 0 5rem 0;
   /* margin-bottom: 2.5rem; */
 }
 
@@ -371,8 +371,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* padding: 2rem 0; */
-  margin: 2rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .skills {
@@ -787,6 +786,14 @@
     padding: 0 4.5rem 4.5rem;
   }
 
+  .about-me-container {
+    padding: 0 0 7.5rem 0;
+  }
+
+  .about-me-video-container {
+    padding: 4rem 0 0 0;
+  }
+
   .skills,
   .blog,
   .resources {
@@ -796,14 +803,6 @@
   .skills {
     align-items: center;
   }
-
-  /* .about-me-text-container {
-    padding: 2rem;
-  } */
-
-  /* .about-me-image-container {
-    width: 60%;
-  } */
 
   .portfolio {
     display: grid;
