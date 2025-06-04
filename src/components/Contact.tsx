@@ -26,23 +26,38 @@ function Contact() {
                 <h4 className="social-links-title">Nice to meet you!</h4>
 
                 <div className="social-links-container">
-                    <a href="https://github.com/AlenaTih" target="_blank">
+                    <a
+                        href="https://github.com/alenatih"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i className="fa-brands fa-square-github"></i>
                     </a>
-                    <a href="https://x.com/Alennushkaa" target="_blank">
+                    <a
+                        href="https://x.com/Alennushkaa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i className="fa-brands fa-square-x-twitter"></i>
                     </a>
-                    {/* <a href="https://www.youtube.com/@alenaatikh" target="_blank">
+                    {/* <a
+                            href="https://www.youtube.com/@alenaatikh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                         <i className="fa-brands fa-square-youtube"></i>
                     </a> */}
-                    <a href="https://www.instagram.com/allennushkaa/" target="_blank">
+                    <a
+                        href="https://www.instagram.com/allennushkaa/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i className="fa-brands fa-instagram"></i>
                     </a>
                     <a
-                        rel="me"
+                        rel="me noopener noreferrer"
                         href="https://mastodon.social/@AlenaTih"
                         target="_blank"
-                        title="Mastodon"
                     >
                         <i className="fa-brands fa-mastodon"></i>
                     </a>
