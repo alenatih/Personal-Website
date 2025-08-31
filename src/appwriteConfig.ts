@@ -1,4 +1,4 @@
-import { Client, Databases, Account } from "appwrite"
+import { Client, Databases, Account, Storage } from "appwrite"
 
 // Import type models for Appwrite
 // import { type Models } from "appwrite"
@@ -11,6 +11,7 @@ client
 
 export const account: Account = new Account(client)
 export const database: Databases = new Databases(client)
+export const storage: Storage = new Storage(client)
 
 // You then use the imported type definitions like this
 // const authUser: Models.Session = await account.createEmailPasswordSession(email, password)

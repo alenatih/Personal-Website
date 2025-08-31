@@ -14,6 +14,7 @@ interface Project {
     Description: string;
     GitHubLink: string;
     Link: string;
+    imageId: string;
     [key: string]: any; // Index signature to allow for additional properties
 }
 

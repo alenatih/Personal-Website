@@ -38,7 +38,7 @@ function NewBlog() {
                         <h4 className="blog-post-title">{blogPost.Title}</h4>
                     </NavLink>
                 )
-})}
+            })}
 
             <NavLink to="blog-post-one-year">
                 <h4 className="blog-post-title">Blog post 0</h4>

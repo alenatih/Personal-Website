@@ -33,7 +33,7 @@ function BlogPost() {
 export default BlogPost
 
 // Loader function
-    export const blogPostInfoLoader = async ({params}: LoaderFunctionArgs) => {
+export const blogPostInfoLoader = async ({params}: LoaderFunctionArgs) => {
     const { slugId } = params
 
     const blogPostId = slugId?.split("-").pop()

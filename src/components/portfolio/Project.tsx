@@ -1,5 +1,5 @@
 import { LoaderFunctionArgs, useLoaderData, useParams } from "react-router-dom"
-import { database } from "../../appwriteConfig.ts"
+import { database, storage } from "../../appwriteConfig.ts"
 
 interface Project {
     $id: string;
@@ -13,6 +13,7 @@ interface Project {
     Description: string;
     GitHubLink: string;
     Link: string;
+    imageId: string;
     [key: string]: any; // Index signature to allow for additional properties
 }
 
@@ -27,6 +28,22 @@ function Project() {
     const projectInfo = useLoaderData() as Project
 
     const projectId = slugId?.split("-").pop()
+
+    // const projectImageIdPromise = storage.getFile("66a43339001923925f0e", projectInfo.imageId)
+    // // ("bucketId", "fileId")
+    // const projectImageFile = await projectImageIdPromise
+
+    // const projectImageUrl = storage.getFileView("66a43339001923925f0e", projectInfo.imageId)
+    // // ("bucketId", "fileId")
+
+    // console.log(projectImageUrl)
+
+    const projectImageUrl = projectInfo.imageId
+        ? storage.getFileView("66a43339001923925f0e", projectInfo.imageId)
+        // ("bucketId", "fileId")
+        : null
+
+    console.log(projectImageUrl)
 
     return (
         <div className="project" id={projectId}>
@@ -56,6 +73,21 @@ function Project() {
                     </a>
                 )}
             </div>
+            {/* {projectInfo.imageId && (
+                <img
+                    className="project-image"
+                    // src={projectImageId.href}
+                    src={projectImageUrl.href}
+                    alt={projectInfo.Title}
+                />
+            )} */}
+            {projectImageUrl && (
+                <img
+                    className="project-image"
+                    src={projectImageUrl.href}
+                    alt={projectInfo.Title}
+                />
+            )}
         </div>
     )
 }
@@ -64,7 +96,7 @@ export default Project
 
 // Loader function
 // export const projectInfoLoader = async ({params}: { params: Params }) => {
-    export const projectInfoLoader = async ({params}: LoaderFunctionArgs) => {
+export const projectInfoLoader = async ({params}: LoaderFunctionArgs) => {
     const { slugId } = params
 
     const projectId = slugId?.split("-").pop()
@@ -85,6 +117,7 @@ export default Project
     try {
         const response = await database.getDocument("66a2de2e00117b4ed64f", "66a2e03d000e648b1b08", projectId)
         // ("databaseId", "collectionId")
+
         return response as Project
     } catch (error) {
         throw Error("Could not find this project.")
