@@ -38,8 +38,8 @@ function Project() {
         // ("bucketId", "fileId")
         : null
 
-    console.log("Image ID:", projectInfo.imageId)
-    console.log("Image URL:", projectImageUrl)
+    // console.log("Image ID:", projectInfo.imageId)
+    // console.log("Image URL:", projectImageUrl)
 
     return (
         <div className="project" id={projectId}>
