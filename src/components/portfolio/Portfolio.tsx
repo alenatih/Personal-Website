@@ -1,5 +1,6 @@
 import { NavLink, useLoaderData } from "react-router-dom"
 import { database } from "../../appwriteConfig.ts"
+// import { database, storage } from "../../appwriteConfig.ts"
 import slugify from "slugify"
 
 interface Project {
@@ -37,9 +38,22 @@ function Portfolio() {
             {projects.slice().reverse().map((project: Project) => {
                 {/* // <NavLink to={project.id.toString()} key={project.id}> */}
                 const slug = slugify(project.Title, { lower: true, replacement: "_" })
+
+                // const projectImageUrl = project.imageId
+                //         ? storage.getFileView("66a43339001923925f0e", project.imageId)
+                //         // ("bucketId", "fileId")
+                //         : null
+                
                 return (
                     <NavLink to={`${slug}-${project.$id}`} key={project.$id}>
                         <h4 className="project-title">{project.Title}</h4>
+                        {/* {projectImageUrl && (
+                        <img
+                            className="project-image"
+                            src={projectImageUrl.href}
+                            alt={project.Title}
+                        />
+                        )} */}
                     </NavLink>
                 )
 })}

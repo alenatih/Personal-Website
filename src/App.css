@@ -403,14 +403,20 @@
   background-color: #3F485A;
   gap: 1rem;
   width: 100%;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
   margin: 2rem auto 2.5rem;
-  padding: 2rem;
   border-radius: 0.5rem;
 }
 
 .project-links-container {
   display: flex;
   align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 
 .blog-post {

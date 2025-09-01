@@ -33,17 +33,13 @@ function Project() {
     // // ("bucketId", "fileId")
     // const projectImageFile = await projectImageIdPromise
 
-    // const projectImageUrl = storage.getFileView("66a43339001923925f0e", projectInfo.imageId)
-    // // ("bucketId", "fileId")
-
-    // console.log(projectImageUrl)
-
     const projectImageUrl = projectInfo.imageId
         ? storage.getFileView("66a43339001923925f0e", projectInfo.imageId)
         // ("bucketId", "fileId")
         : null
 
-    console.log(projectImageUrl)
+    console.log("Image ID:", projectInfo.imageId)
+    console.log("Image URL:", projectImageUrl)
 
     return (
         <div className="project" id={projectId}>
@@ -73,14 +69,6 @@ function Project() {
                     </a>
                 )}
             </div>
-            {/* {projectInfo.imageId && (
-                <img
-                    className="project-image"
-                    // src={projectImageId.href}
-                    src={projectImageUrl.href}
-                    alt={projectInfo.Title}
-                />
-            )} */}
             {projectImageUrl && (
                 <img
                     className="project-image"
