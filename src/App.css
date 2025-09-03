@@ -44,7 +44,8 @@
 }
 
 .contact-title,
-.social-links-title {
+.social-links-title,
+.subscribe-title {
   font-size: 1.5rem;
 }
 
@@ -172,7 +173,8 @@
   font-weight: 550;
 }
 
-.contact-title {
+.contact-title,
+.subscribe-title {
   text-align: center;
 }
 
@@ -190,6 +192,10 @@
 
 .contact-text {
   margin-top: 2rem;
+}
+
+.subscribe-disclaimer {
+  text-align: center;
 }
 
 .footer-text {
@@ -495,6 +501,15 @@
   display: none;
 }
 
+.subscribe-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2.5rem 0 4.5rem;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -514,7 +529,8 @@
   margin-top: 4.5rem;
 }
 
-.contact-form {
+.contact-form,
+.subscribe-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -527,6 +543,19 @@
 .input-name,
 .input-email,
 .input-message,
+.form-submit-button {
+  display: block;
+  width: 100%;
+}
+
+.subscribe-form {
+  max-width: 400px;
+  margin-top: 2.5rem;
+}
+
+.subscribe-form label,
+.input-name,
+.input-email,
 .form-submit-button {
   display: block;
   width: 100%;
@@ -854,6 +883,10 @@
     width: 60%;
   }
 
+  .project {
+    margin: 2.5rem auto 2.5rem;
+  }
+
   .resource {
     width: 40%;
   }
@@ -864,6 +897,15 @@
 
   .breadcrumbs {
     padding: 1rem;
+  }
+
+  .subscribe-form-container {
+    padding: 2.4rem 4.5rem 4.5rem;
+  }
+
+  .subscribe-form {
+    max-width: 400px;
+    margin-top: 3rem;
   }
 
   .contact {

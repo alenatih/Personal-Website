@@ -5,5 +5,6 @@
     skills: "/skills",
     blog: "/blog",
     resources: "/resources",
-    contact: "/contact"
+    contact: "/contact",
+    subscribe: "/subscribe",
   }

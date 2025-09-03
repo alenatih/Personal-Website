@@ -22,6 +22,7 @@ import Blog, { blogPostsLoader } from "./components/blog/Blog.tsx"
 import BlogPostOneYear from "./components/blog/BlogPostOneYear.tsx"
 import BlogPost, { blogPostInfoLoader } from "./components/blog/BlogPost.tsx"
 import Contact, { contactAction } from "./components/Contact.tsx"
+import Subscribe, { subscribeAction } from "./components/Subscribe.tsx"
 import NotFound from "./components/NotFound.tsx"
 import ProjectsError from "./components/portfolio/ProjectsError.tsx"
 import BlogError from "./components/blog/BlogError.tsx"
@@ -71,6 +72,7 @@ const router = createBrowserRouter(
     // </Route>
     // <Route path="/resources" element={<Resources />} />
     // <Route path="/contact" element={<Contact />} action={contactAction} />
+    // <Route path="/subscribe" element={<Subscribe />} action={subscribeAction} />
 
     //   <Route path="*" element={<NotFound />} />
     // </Route>
@@ -108,6 +110,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path={ROUTE.resources} element={<Resources />} />
       <Route path={ROUTE.contact} element={<Contact />} action={contactAction} />
+      <Route path={ROUTE.subscribe} element={<Subscribe />} action={subscribeAction} />
 
       <Route path="*" element={<NotFound />} />
     </Route>
