@@ -501,13 +501,13 @@
   display: none;
 }
 
-.subscribe-form-container {
+.subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2.5rem 0 4.5rem;
+  padding: 2.5rem 0 7.5rem;
 }
 
 .contact {
@@ -899,8 +899,8 @@
     padding: 1rem;
   }
 
-  .subscribe-form-container {
-    padding: 2.4rem 4.5rem 4.5rem;
+  .subscribe {
+    padding: 2.5rem 4.5rem 7.5rem;
   }
 
   .subscribe-form {

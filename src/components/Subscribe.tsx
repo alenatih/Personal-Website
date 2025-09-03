@@ -18,7 +18,7 @@ function Subscribe() {
     const data = useActionData() as SubscribeActionData
 
     return (
-        <div className="subscribe-form-container">
+        <div className="subscribe">
 
                 <h4 className="subscribe-title">Subscribe to my newsletter</h4>
 
