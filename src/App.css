@@ -431,7 +431,7 @@
   background-color: #3F485A;
   gap: 1rem;
   width: 100%;
-  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  padding: 2rem 2.5rem 3rem 2.5rem;
   margin: 2rem auto 2.5rem;
   border-radius: 0.5rem;
 }
@@ -649,13 +649,13 @@
 .project-image {
   width: 100%;
   border-radius: 0.5rem;
-  margin: 1rem 0 1.25rem;
+  margin: 1rem 0;
 }
 
 .portfolio-project-image {
   width: 100%;
   border-radius: 0.5rem;
-  margin: 1.5rem 0 1rem;
+  margin: 1.5rem 0 1.25rem;
 }
 
 .error-image {
@@ -938,6 +938,10 @@
 
   .about-me-image {
     width: 70%;
+  }
+
+  .portfolio-project-image {
+    margin: 1.5rem 0;
   }
 
   .blog-post-image {
