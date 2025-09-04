@@ -31,6 +31,13 @@ function Home() {
                         and check out my <NavLink to="/blog">blog.</NavLink>
                     </p>
 
+                    {/* <p className="home-text">
+                        You can read a little bit more 
+                        <NavLink to="/aboutme"> about me</NavLink>,
+                        check out my <NavLink to="/blog">blog</NavLink>,
+                        and subscribe to my <NavLink to="/subscribe">newsletter.</NavLink>
+                    </p> */}
+
                     <p className="home-text open-text">
                         I'm open for Frontend Developer roles in a company or startup.
                     </p>
