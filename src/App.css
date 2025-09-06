@@ -431,8 +431,8 @@
   background-color: #3F485A;
   gap: 1rem;
   width: 100%;
-  padding: 2rem 2.5rem 3rem 2.5rem;
-  margin: 2rem auto 2.5rem;
+  padding: 2rem 2.5rem 3rem;
+  margin: 2rem auto 4.5rem;
   border-radius: 0.5rem;
 }
 
@@ -884,7 +884,7 @@
   }
 
   .project {
-    margin: 2.5rem auto 2.5rem;
+    margin: 2.5rem auto 4.5rem;
   }
 
   .resource {
