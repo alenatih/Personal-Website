@@ -37,7 +37,7 @@ function AboutMe() {
                         Tailwind CSS, and Figma.
                     </p>
                     <p className="about-me-text">
-                        I love design, UX/UI, books, languages, and AI. 
+                        I love art, design, UX/UI, books, languages, and AI. 
                         I enjoy building web apps, learning and using new technologies.
                     </p>
                     <p className="about-me-text">

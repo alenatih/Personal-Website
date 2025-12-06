@@ -290,7 +290,6 @@
 .about-me,
 .skills,
 .resources,
-.resources-container,
 .blog,
 .projects-error,
 .blog-error,
@@ -402,6 +401,22 @@
   margin: 2rem auto;
 }
 
+.resources {
+  gap: 0;
+}
+
+.resources-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  padding-bottom: 4.5rem;
+  margin: 2rem auto;
+}
+
 .portfolio-project-link {
   display: flex;
   flex-direction: column;
@@ -474,7 +489,7 @@
   height: 100%;
   width: 100%;
   padding: 2.5rem 2.5rem 3rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   /* border: 1px solid #F7EFE2; */
   border-radius: 0.5rem;
   box-shadow: 0 0 0.25rem 0.1125rem #6989FA;
@@ -776,7 +791,8 @@ button:disabled {
 @media (max-width: 599px) {
   /* Typography and icons */
 
-  .portfolio-title {
+  .portfolio-title,
+  .resources-title {
     margin-top: 1rem;
   }
 
@@ -821,7 +837,7 @@ button:disabled {
     width: 100%;
   }
 
-  .skills-text,
+  /* .skills-text, */
   .blog-quote-text {
     width: 60%;
   }
@@ -905,6 +921,7 @@ button:disabled {
 
   .skills {
     align-items: center;
+    width: 50%;
   }
 
   .portfolio {
@@ -917,9 +934,12 @@ button:disabled {
     margin: 3rem auto 1rem;
   }
 
-  .blog-post,
   .blog-post-one-year {
     width: 60%;
+  }
+
+  .blog-post {
+    width: 50%;
   }
 
   .project {
