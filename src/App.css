@@ -290,6 +290,7 @@
 .about-me,
 .skills,
 .resources,
+.resources-container,
 .blog,
 .projects-error,
 .blog-error,
@@ -310,6 +311,7 @@
 .portfolio-layout,
 .blog,
 .resources,
+.resources-container,
 .contact,
 .projects-error,
 .blog-error,
@@ -467,10 +469,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 1rem;
+  height: 100%;
   width: 100%;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 3rem;
   margin-top: 1rem;
   /* border: 1px solid #F7EFE2; */
   border-radius: 0.5rem;
@@ -608,6 +611,26 @@
 
 /* Buttons */
 
+button {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  transform: translateZ(0); /* Helps on some GPUs */
+}
+
+button:active {
+  transform: scale(0.98); /* Scale down. Or 0.97 for a little bit more */
+}
+
+button:disabled {
+  /* opacity: 0.6;
+  cursor: not-allowed; */
+  transform: none;
+}
+
+/* button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+} */
+
 .form-submit-button {
   color: whitesmoke;
   background-color: #2E5CB5;
@@ -731,6 +754,7 @@
 
 .resources-link {
   font-size: 1.125rem;
+  text-align: center;
   text-decoration: underline;
 }
 
@@ -741,6 +765,12 @@
 }
 
 /* Media queries */
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+}
 
 /* @media (width <= 599px) */
 @media (max-width: 599px) {
@@ -863,6 +893,16 @@
     padding: 0 4.5rem 4.5rem;
   }
 
+  .resources-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.5rem;
+    row-gap: 2.5rem;
+    width: 100%;
+    padding: 0 4.5rem 4.5rem;
+    margin: 3rem auto 1rem;
+  }
+
   .skills {
     align-items: center;
   }
@@ -877,23 +917,26 @@
     margin: 3rem auto 1rem;
   }
 
-  .project,
   .blog-post,
   .blog-post-one-year {
     width: 60%;
   }
 
   .project {
+    width: 50%;
+  }
+
+  .project {
     margin: 2.5rem auto 4.5rem;
   }
 
-  .resource {
+  /* .resource {
     width: 40%;
-  }
+  } */
 
-  .resource:nth-of-type(1) {
+  /* .resource:nth-of-type(1) {
     margin-top: 2rem;
-  }
+  } */
 
   .breadcrumbs {
     padding: 1rem;

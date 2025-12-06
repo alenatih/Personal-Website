@@ -20,6 +20,11 @@ function Home() {
                         <NavLink className="view-work-link" to="/portfolio">View my work</NavLink>
 
                     <p className="home-text">
+                        Frontend Engineer. Building things. 
+                        On my journey to becoming a solo entrepreneur. Doing what I love.
+                    </p>
+
+                    <p className="home-text">
                         My goal is to be not just a Frontend developer, 
                         but a software engineer who can work with any technology 
                         and solves business problems.
@@ -39,7 +44,7 @@ function Home() {
                     </p> */}
 
                     <p className="home-text open-text">
-                        I'm open for Frontend Developer roles in a company or startup.
+                        I'm open for Frontend engineer roles in a company or startup.
                     </p>
 
                     <p className="home-text">

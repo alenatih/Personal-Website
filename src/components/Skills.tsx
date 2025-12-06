@@ -6,7 +6,7 @@ function Skills() {
             <p className="skills-text">
                 My main skills include HTML, CSS, JavaScript, TypeScript, 
                 React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel, Appwrite, 
-                PostgreSQL, Supabase, Firebase, React Testing Library, Vitest, WebdriverIO, 
+                PostgreSQL, Supabase, Firebase, React Testing Library, Vitest, Playwright, WebdriverIO, 
                 Tailwind CSS, and Figma.
             </p>
         </div>
