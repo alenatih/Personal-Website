@@ -55,6 +55,8 @@ body {
   min-height: 100vh;
 } */
 
+@custom-variant dark (&:is(.dark *));
+
 .dark-mode {
   /* color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
