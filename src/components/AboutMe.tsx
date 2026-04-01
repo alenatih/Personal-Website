@@ -27,7 +27,7 @@ function AboutMe() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-5 max-w-3xl">
                         <p className="text-base leading-relaxed">
                             My main skills include HTML, CSS, JavaScript, TypeScript,
                             React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel,
