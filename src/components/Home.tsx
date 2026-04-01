@@ -65,7 +65,7 @@ function Home() {
 
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400 text-center md:text-left">
                         You can contact me at{" "}
-                        <span className="text-amber-700 dark:text-amber-400">alyonatihomirova9@gmail.com.</span>
+                        <span className="text-amber-700 dark:text-amber-400">alyonatihomirova9@gmail.com</span>
                     </p>
 
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400 text-center md:text-left -mt-2">
