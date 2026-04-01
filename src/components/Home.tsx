@@ -31,7 +31,7 @@ function Home() {
                     />
                 </div>
 
-                <div className="flex flex-col items-center md:items-start gap-4 max-w-3xl w-full mt-8 md:mt-0">
+                <div className="flex flex-col items-center md:items-start gap-4 max-w-2xl w-full mt-8 md:mt-0">
 
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400 text-center md:text-left">
                         Frontend Engineer. Building things.
