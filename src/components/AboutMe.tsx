@@ -7,7 +7,7 @@ function AboutMe() {
 
                 {/* Section heading */}
                 <div className="flex flex-col items-center text-center mb-16 gap-4">
-                    <h2 className="text-4xl md:text-5xl font-serif tracking-wide">
+                    <h2 className="text-4xl md:text-5xl font-serif text-blue-900 dark:text-blue-200 tracking-wide">
                         About me
                     </h2>
                     <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent"></div>

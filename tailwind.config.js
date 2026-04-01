@@ -3,13 +3,7 @@ export default {
   darkMode: ["class", "dark"],
   content: [
     "./index.html",
-    "./src/main.tsx",
-    "./src/app.tsx",
-    "./src/components/Header.tsx",
-    "./src/components/AboutMe.tsx",
-    "./src/components/Portfolio.tsx",
-    "./src/components/Skills.tsx",
-    "./src/components/Footer.tsx",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {},
@@ -19,4 +13,3 @@ export default {
     "*.css": "tailwindcss"
   }
 }
-
