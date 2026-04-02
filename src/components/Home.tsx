@@ -4,7 +4,7 @@ import Sunset from "../assets/sunset.png"
 function Home() {
 
     return (
-        <div className="home relative py-16 px-4 sm:px-6 md:px-12 max-w-7xl">
+        <div className="home relative px-4 sm:px-6 md:px-12 max-w-7xl">
 
             {/* Background tint */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-transparent to-blue-300/20 dark:from-blue-900/20 dark:via-transparent dark:to-blue-950/20 -z-10 pointer-events-none"></div>
