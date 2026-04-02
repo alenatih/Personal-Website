@@ -26,7 +26,7 @@ function RootLayout() {
 
         // Clean up an event listener on component unmount
         return () => {
-        window.removeEventListener("resize", checkScreenSize)
+            window.removeEventListener("resize", checkScreenSize)
         }
     }, [])
 
