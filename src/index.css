@@ -98,6 +98,26 @@ body {
 
 /* Buttons */
 
+button {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  transform: translateZ(0); /* Helps on some GPUs */
+}
+
+button:active {
+  transform: scale(0.98); /* Scale down. Or 0.97 for a little bit more */
+}
+
+button:disabled {
+  /* opacity: 0.6;
+  cursor: not-allowed; */
+  transform: none;
+}
+
+/* button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+} */
+
 
 /* Images */
 
@@ -113,6 +133,11 @@ body {
     background-color: whitesmoke;
   }
 } */
+
+/* @media (width <= 599px) { */
+@media (max-width: 599px) {
+
+}
 
 /* @media (width >= 600px) */
 @media (min-width: 600px) {
