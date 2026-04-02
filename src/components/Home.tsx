@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom"
-import Sunset from "../assets/sunset.png"
+// import Sunset from "../assets/sunset.png"
+// import Ocean from "../assets/Ocean.png"
+import OceanLittle from "../assets/Ocean-little.png"
 
 function Home() {
 
@@ -26,8 +28,8 @@ function Home() {
                 <div className="flex items-center justify-center md:w-64 lg:w-72 flex-shrink-0 w-full">
                     <img
                         className="w-full rounded-full shadow-lg shadow-blue-200/60 dark:shadow-blue-900/40"
-                        src={Sunset}
-                        alt="Alena smiles with sunset in the background"
+                        src={OceanLittle}
+                        alt="Alena smiles"
                     />
                 </div>
 

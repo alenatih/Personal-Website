@@ -1,8 +1,9 @@
-import Sunset from "../assets/sunset.png"
+// import Sunset from "../assets/sunset.png"
+import OceanLittle from "../assets/Ocean-little.png"
 
 function AboutMe() {
     return (
-        <section className="py-24 pb-36 px-4 sm:px-6 md:px-12 w-full">
+        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section heading */}
@@ -20,9 +21,9 @@ function AboutMe() {
                         <div className="relative">
                             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 blur-2xl opacity-20"></div>
                             <img
-                                src={Sunset}
+                                src={OceanLittle}
                                 alt="Alena smiles"
-                                className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-xl"
+                                className="relative h-64 w-64 md:h-72 md:w-72 object-cover rounded-full shadow-xl"
                             />
                         </div>
                     </div>
