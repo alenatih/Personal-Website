@@ -42,40 +42,51 @@ function Project() {
     // console.log("Image URL:", projectImageUrl)
 
     return (
-        <div className="project" id={projectId}>
-            <a
-                className="project-title-link"
-                href={projectInfo.Link}
-                target="_blank"
-                rel="noopener noreferrer">
-                {projectInfo.Title}
-            </a>
-            <p className="project-description">{projectInfo.Description}</p>
-            <div className="project-links-container">
+        <div className="flex flex-col gap-6 max-w-2xl mx-auto" id={projectId}>
+
+            <div className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6 flex flex-col gap-4">
+
                 <a
-                    className="project-live-link"
+                    className="text-2xl font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                     href={projectInfo.Link}
                     target="_blank"
                     rel="noopener noreferrer">
-                    It's live here
+                    {projectInfo.Title}
                 </a>
-                {projectInfo.GitHubLink && (
+
+                <p className="text-base text-gray-700 dark:text-gray-400 leading-relaxed">
+                    {projectInfo.Description}
+                </p>
+
+                <div className="flex gap-4">
                     <a
-                        className="project-github-link"
-                        href={projectInfo.GitHubLink}
+                        className="text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-6 text-sm font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                        href={projectInfo.Link}
                         target="_blank"
                         rel="noopener noreferrer">
-                        GitHub
+                        It's live here
                     </a>
-                )}
+                    {projectInfo.GitHubLink && (
+                        <a
+                            className="text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 py-2 px-6 text-sm font-medium rounded-md hover:scale-105 transition-all duration-300"
+                            href={projectInfo.GitHubLink}
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    )}
+                </div>
+
             </div>
+
             {projectImageUrl && (
                 <img
-                    className="project-image"
+                    className="w-full rounded-lg shadow-md"
                     src={projectImageUrl.href}
                     alt={projectInfo.Title}
                 />
             )}
+
         </div>
     )
 }

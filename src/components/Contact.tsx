@@ -19,96 +19,121 @@ function Contact() {
     const data = useActionData() as ContactActionData
 
     return (
-        <div className="contact">
+        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full max-w-5xl mx-auto">
+            <div className="max-w-7xl mx-auto">
 
-            <div className="contact-social-container">
-
-                <h4 className="social-links-title">Nice to meet you!</h4>
-
-                <div className="social-links-container">
-                    <a
-                        href="https://github.com/alenatih"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fa-brands fa-square-github"></i>
-                    </a>
-                    <a
-                        href="https://x.com/Alennushkaa"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fa-brands fa-square-x-twitter"></i>
-                    </a>
-                    {/* <a
-                            href="https://www.youtube.com/@alenaatikh"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                        <i className="fa-brands fa-square-youtube"></i>
-                    </a> */}
-                    <a
-                        href="https://www.instagram.com/allennushkaa/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fa-brands fa-instagram"></i>
-                    </a>
-                    <a
-                        rel="me noopener noreferrer"
-                        href="https://mastodon.social/@AlenaTih"
-                        target="_blank"
-                    >
-                        <i className="fa-brands fa-mastodon"></i>
-                    </a>
+                {/* Section heading */}
+                <div className="flex flex-col items-center text-center mb-16 gap-4">
+                    <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
+                        Contact
+                    </h2>
+                    <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400"></div>
                 </div>
 
-                <p className="contact-text">alyonatihomirova9@gmail.com</p>
+                <div className="flex flex-col md:flex-row gap-12">
 
+                    {/* Social links */}
+                    <div className="flex flex-col gap-6 md:w-64 flex-shrink-0">
+                        <h3 className="text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100">
+                            Nice to meet you!
+                        </h3>
+
+                        <div className="flex gap-4 text-3xl">
+                            <a
+                                href="https://github.com/alenatih"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+                            >
+                                <i className="fa-brands fa-square-github"></i>
+                            </a>
+                            <a
+                                href="https://x.com/Alennushkaa"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+                            >
+                                <i className="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/allennushkaa/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+                            >
+                                <i className="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                rel="me noopener noreferrer"
+                                href="https://mastodon.social/@AlenaTih"
+                                target="_blank"
+                                className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+                            >
+                                <i className="fa-brands fa-mastodon"></i>
+                            </a>
+                        </div>
+
+                        <p className="text-sm text-amber-700 dark:text-amber-400 font-medium">
+                            alyonatihomirova9@gmail.com
+                        </p>
+                    </div>
+
+                    {/* Contact form */}
+                    <div className="flex-1 border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6">
+                        <h3 className="text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100 mb-6">
+                            Contact me
+                        </h3>
+
+                        <Form className="flex flex-col gap-4" method="post" action="/contact">
+
+                            <div className="flex flex-col gap-2">
+                                <label className="text-sm font-medium leading-none" htmlFor="input-name">
+                                    Your name
+                                </label>
+                                <input
+                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                    id="input-name"
+                                    type="text"
+                                    name="name"
+                                    required />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label className="text-sm font-medium leading-none" htmlFor="input-email">
+                                    Your email
+                                </label>
+                                <input
+                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                    id="input-email"
+                                    type="email"
+                                    name="email"
+                                    required />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label className="text-sm font-medium leading-none" htmlFor="input-message">
+                                    Your message
+                                </label>
+                                <textarea
+                                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                    id="input-message"
+                                    name="message"
+                                    required />
+                            </div>
+
+                            <button className="self-start text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-8 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 mt-2">
+                                Submit
+                            </button>
+
+                            {data && data.error && (
+                                <p className="text-sm text-red-600 dark:text-red-400">{data.error}</p>
+                            )}
+                        </Form>
+                    </div>
+
+                </div>
             </div>
-
-            <div className="contact-form-container">
-
-                <h4 className="contact-title">Contact me</h4>
-
-                <Form className="contact-form" method="post" action="/contact">
-                    <label htmlFor="input-name">
-                        Your name
-                        <input
-                            className="input-name"
-                            id="input-name"
-                            type="text"
-                            name="name"
-                            required />
-                    </label>
-
-                    <label htmlFor="input-email">
-                        Your email
-                        <input
-                            className="input-email"
-                            id="input-email"
-                            type="email"
-                            name="email"
-                            required />
-                    </label>
-
-                    <label htmlFor="input-message">
-                        Your message
-                        <textarea
-                            className="input-message"
-                            id="input-message"
-                            name="message"
-                            required ></textarea>
-                    </label>
-
-                    <button className="form-submit-button">Submit</button>
-
-                    {data && data.error && <p>{data.error}</p>}
-                </Form>
-
-            </div>
-
-        </div>
+        </section>
     )
 }
 

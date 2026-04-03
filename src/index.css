@@ -101,6 +101,7 @@ body {
 button {
   transition: transform 150ms ease, box-shadow 150ms ease;
   transform: translateZ(0); /* Helps on some GPUs */
+  cursor: pointer;
 }
 
 button:active {

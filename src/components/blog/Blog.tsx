@@ -22,28 +22,53 @@ function NewBlog() {
 
     if (!blogPosts) {
         return (
-            <div>
-                <h4>Loading...</h4>
+            <div className="px-4 sm:px-6 md:px-12 py-24 max-w-7xl mx-auto w-full">
+                <p className="text-gray-600 dark:text-gray-400">Loading...</p>
             </div>
         )
     }
 
     return (
-        <div className="blog">
-            {blogPosts.slice().reverse().map((blogPost: BlogPost) => {
-                // <NavLink to={blogPost.id.toString()} key={blogPost.id}>
-                const slug = slugify(blogPost.Title, { lower: true, replacement: "_" })
-                return (
-                    <NavLink to={`${slug}-${blogPost.$id}`} key={blogPost.$id}>
-                        <h4 className="blog-post-title">{blogPost.Title}</h4>
-                    </NavLink>
-                )
-            })}
+        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full max-w-4xl mx-auto">
+            <div className="max-w-7xl mx-auto">
 
-            <NavLink to="blog-post-one-year">
-                <h4 className="blog-post-title">Blog post 0</h4>
-            </NavLink>
-        </div>
+                {/* Section heading */}
+                <div className="flex flex-col items-center text-center mb-16 gap-4">
+                    <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
+                        Blog
+                    </h2>
+                    <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400"></div>
+                </div>
+
+                {/* Blog post cards */}
+                <div className="flex flex-col gap-4">
+                    {blogPosts.slice().reverse().map((blogPost: BlogPost) => {
+                        const slug = slugify(blogPost.Title, { lower: true, replacement: "_" })
+                        return (
+                            <NavLink
+                                to={`${slug}-${blogPost.$id}`}
+                                key={blogPost.$id}
+                                className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 no-underline"
+                            >
+                                <h3 className="text-lg font-semibold tracking-tight group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+                                    {blogPost.Title}
+                                </h3>
+                            </NavLink>
+                        )
+                    })}
+
+                    <NavLink
+                        to="blog-post-one-year"
+                        className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 no-underline"
+                    >
+                        <h3 className="text-lg font-semibold tracking-tight group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+                            Blog post 0
+                        </h3>
+                    </NavLink>
+                </div>
+
+            </div>
+        </section>
     )
 }
 

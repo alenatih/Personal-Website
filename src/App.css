@@ -362,7 +362,8 @@
 .contact,
 .projects-error,
 .blog-error,
-.not-found {
+.not-found,
+.blog-post-one-year {
   padding-bottom: 4.5rem;
 }
 
@@ -523,9 +524,11 @@
 .blog-post-one-year {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  /* gap: 1rem; */
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .resource {
@@ -1030,9 +1033,9 @@ button:disabled {
     margin: 3rem auto 1rem;
   }
 
-  .blog-post-one-year {
+  /* .blog-post-one-year {
     width: 60%;
-  }
+  } */
 
   .blog-post {
     width: 50%;
