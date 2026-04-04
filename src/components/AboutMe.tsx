@@ -3,11 +3,11 @@ import OceanLittle from "../assets/Ocean-little.png"
 
 function AboutMe() {
     return (
-        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full">
+        <section className="pt-4 pb-36 px-4 sm:px-6 md:px-12 w-full">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section heading */}
-                <div className="flex flex-col items-center text-center mb-16 gap-4">
+                <div className="flex flex-col items-center text-center mb-8 md:mb-16 gap-4">
                     <h2 className="text-4xl md:text-5xl font-serif text-blue-900 dark:text-blue-200 tracking-wide">
                         About me
                     </h2>
@@ -15,7 +15,7 @@ function AboutMe() {
                 </div>
 
                 {/* Image + text */}
-                <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center mb-20">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center mb-20">
 
                     <div className="flex-shrink-0 flex justify-center">
                         <div className="relative">
@@ -28,7 +28,7 @@ function AboutMe() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-5 max-w-3xl">
+                    <div className="flex flex-col gap-5 max-w-2xl">
                         <p className="text-base leading-relaxed">
                             My main skills include HTML, CSS, JavaScript, TypeScript,
                             React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel,
@@ -40,7 +40,7 @@ function AboutMe() {
                             I enjoy building web apps, learning and using new technologies.
                         </p>
                         <p className="text-base leading-relaxed">
-                            I also enjoy doing aerial gymnastics on silks and lyra.
+                            I also enjoy doing aerial gymnastics on silks and lyra and making jewelry.
                         </p>
                     </div>
 
