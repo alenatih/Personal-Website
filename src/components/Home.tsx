@@ -12,13 +12,13 @@ function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-transparent to-blue-300/20 dark:from-blue-900/20 dark:via-transparent dark:to-blue-950/20 -z-10 pointer-events-none"></div>
 
             {/* Title + ornamental rule */}
-            <div className="flex flex-col items-center text-center mb-10 gap-4">
+            <div className="flex flex-col items-center text-center max-w-5xl mx-auto mb-10 gap-4">
                 <h2 className="text-4xl md:text-5xl font-serif tracking-wide text-gray-900 dark:text-amber-50">
                     Alena{" "}
                     <span className="bg-clip-text text-transparent bg-gradient-to-br from-amber-600 to-amber-800 dark:from-amber-400 dark:to-amber-600">
-                        Tikhomirova
+                        Tikhomirova,
                     </span>
-                    , a creative Frontend engineer
+                    <span className="block">a creative Frontend engineer</span>
                 </h2>
                 <div className="h-px bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400 w-20 md:w-40 mt-4"></div>
             </div>

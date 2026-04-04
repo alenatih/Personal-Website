@@ -352,7 +352,7 @@
   margin: 0 auto;
 }
 
-.home,
+/* .home, */
 /* .about-me, */
 .skills,
 .portfolio-layout,
@@ -365,6 +365,10 @@
 .not-found,
 .blog-post-one-year {
   padding-bottom: 4.5rem;
+}
+
+.home {
+  padding-bottom: 7rem;
 }
 
 .home-container {
