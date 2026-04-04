@@ -18,9 +18,9 @@ function Home() {
                     <span className="bg-clip-text text-transparent bg-gradient-to-br from-amber-600 to-amber-800 dark:from-amber-400 dark:to-amber-600">
                         Tikhomirova
                     </span>
-                    , a Frontend engineer
+                    , a creative Frontend engineer
                 </h2>
-                <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400 w-12 md:w-40"></div>
+                <div className="h-px bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400 w-20 md:w-40 mt-4"></div>
             </div>
 
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start w-full">

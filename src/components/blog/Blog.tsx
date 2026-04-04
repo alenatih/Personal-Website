@@ -57,14 +57,14 @@ function NewBlog() {
                         )
                     })}
 
-                    <NavLink
+                    {/* <NavLink
                         to="blog-post-one-year"
                         className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 no-underline"
                     >
                         <h3 className="text-lg font-semibold tracking-tight group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
                             Blog post 0
                         </h3>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
             </div>
