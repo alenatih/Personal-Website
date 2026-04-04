@@ -18,42 +18,69 @@ function Subscribe() {
     const data = useActionData() as SubscribeActionData
 
     return (
-        <div className="subscribe">
+        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full max-w-5xl mx-auto">
+            <div className="max-w-7xl mx-auto">
 
-                <h4 className="subscribe-title">Subscribe to my newsletter</h4>
+                {/* Section heading */}
+                <div className="flex flex-col items-center text-center mb-12 md:mb-16 gap-4">
+                    <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
+                        Subscribe
+                    </h2>
+                    <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400"></div>
+                    <p className="text-xl text-gray-600 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
+                        Subscribe to my newsletter
+                    </p>
+                </div>
 
-                <Form className="subscribe-form" method="post" action="/subscribe">
-                    <label htmlFor="subscribe-name">
-                        Your name
-                        <input
-                            className="input-name"
-                            id="subscribe-name"
-                            type="text"
-                            name="name"
-                            required
-                        />
-                    </label>
+                {/* Subscribe form card */}
+                <div
+                    className="flex flex-col max-w-lg mx-auto border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6 pb-12"
+                >
 
-                    <label htmlFor="subscribe-email">
-                        Your email
-                        <input
-                            className="input-email"
-                            id="subscribe-email"
-                            type="email"
-                            name="email"
-                            required />
-                    </label>
+                    <Form className="flex flex-col gap-4" method="post" action="/subscribe">
 
-                    <button className="form-submit-button">Submit</button>
+                        <div className="flex flex-col gap-2">
+                            <label className="text-sm font-medium leading-none" htmlFor="subscribe-name">
+                                Your name
+                            </label>
+                            <input
+                                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                id="subscribe-name"
+                                type="text"
+                                name="name"
+                                required
+                            />
+                        </div>
 
-                    {data && data.error && <p>{data.error}</p>}
-                </Form>
+                        <div className="flex flex-col gap-2">
+                            <label className="text-sm font-medium leading-none" htmlFor="subscribe-email">
+                                Your email
+                            </label>
+                            <input
+                                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                id="subscribe-email"
+                                type="email"
+                                name="email"
+                                required
+                            />
+                        </div>
 
-                <p className="subscribe-disclaimer">
-                    By submitting, you agree to receive emails from me.
-                </p>
+                        <button className="self-start text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-8 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 mt-2">
+                            Submit
+                        </button>
 
-        </div>
+                        {data && data.error && (
+                            <p className="text-sm text-red-600 dark:text-red-400">{data.error}</p>
+                        )}
+                    </Form>
+
+                    <p className="text-xs text-muted-foreground mt-4">
+                        By submitting, you agree to receive emails from me.
+                    </p>
+                </div>
+
+            </div>
+        </section>
     )
 }
 
