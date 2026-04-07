@@ -21,12 +21,12 @@ function BlogPost() {
     const blogPostId = slugId?.split("-").pop()
 
     return (
-        <div className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md max-w-5xl p-6 mx-auto flex flex-col gap-4" id={blogPostId}>
-            <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
+        <div className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md max-w-4xl p-6 pt-8 pb-12 mx-auto flex flex-col gap-4" id={blogPostId}>
+            <h2 className="text-4xl md:text-4xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
                 {blogPostInfo.Title}
             </h2>
             <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400"></div>
-            <p className="text-base text-gray-700 dark:text-gray-400 leading-relaxed whitespace-pre-line">
+            <p className="text-base text-gray-700 dark:text-gray-400 leading-relaxed whitespace-pre-line mt-2">
                 {blogPostInfo.Text}
             </p>
         </div>
