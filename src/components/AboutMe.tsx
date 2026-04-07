@@ -30,10 +30,12 @@ function AboutMe() {
 
                     <div className="flex flex-col gap-5 max-w-2xl">
                         <p className="text-base leading-relaxed">
-                            My main skills include HTML, CSS, JavaScript, TypeScript,
+                            {/* My main skills include HTML, CSS, JavaScript, TypeScript,
                             React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel,
                             Appwrite, PostgreSQL, Supabase, Firebase, React Testing Library, Vitest, Playwright, WebdriverIO,
-                            Tailwind CSS, and Figma.
+                            Tailwind CSS, and Figma. */}
+                            Frontend Engineer. Building things.
+                            On my journey to becoming a solo entrepreneur. Doing what I love.
                         </p>
                         <p className="text-base leading-relaxed">
                             I love art, design, UX/UI, books, languages, and AI.
