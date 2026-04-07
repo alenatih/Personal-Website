@@ -47,7 +47,7 @@ function Project() {
             <div className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6 pb-12 flex flex-col gap-4">
 
                 <a
-                    className="text-2xl font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
+                    className="text-2xl tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                     href={projectInfo.Link}
                     target="_blank"
                     rel="noopener noreferrer">
