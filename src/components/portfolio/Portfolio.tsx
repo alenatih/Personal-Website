@@ -49,7 +49,7 @@ function Portfolio() {
                         key={project.$id}
                         className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12 no-underline"
                     >
-                        <h3 className="text-lg font-semibold tracking-tight group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+                        <h3 className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-200 transition-colors">
                             {project.Title}
                         </h3>
                         {project.Description && (
