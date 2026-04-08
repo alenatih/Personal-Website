@@ -81,6 +81,7 @@ function RootLayout() {
                                     onClick={() => setIsMobileMenuOpen(false)}>
                                 </i>
                             </div>
+                            <div className="mobile-menu-links">
                                 <NavLink to="/" onClick={toggleMobileMenu}>Home</NavLink>
                                 <NavLink to="/aboutme" onClick={toggleMobileMenu}>About me</NavLink>
                                 <NavLink to="/portfolio" onClick={toggleMobileMenu}>Portfolio</NavLink>
@@ -88,6 +89,7 @@ function RootLayout() {
                                 <NavLink to="/blog" onClick={toggleMobileMenu}>Blog</NavLink>
                                 <NavLink to="/resources" onClick={toggleMobileMenu}>Resources</NavLink>
                                 <NavLink to="/contact" onClick={toggleMobileMenu}>Contact</NavLink>
+                            </div>
                             </nav>
                             <NavLink to="/">Home</NavLink>
                             <ToggleButton />

@@ -15,10 +15,10 @@ function AboutMe() {
                 </div>
 
                 {/* Image + text */}
-                <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center mb-20">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 mb-20">
 
                     <div className="flex-shrink-0 flex justify-center">
-                        <div className="relative">
+                        <div className="flex flex-col items-center justify-center relative">
                             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 blur-2xl opacity-20"></div>
                             <img
                                 src={OceanLittle}

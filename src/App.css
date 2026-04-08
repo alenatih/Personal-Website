@@ -267,6 +267,11 @@
   box-shadow: 2px 0 16px rgba(0, 0, 0, 0.4);
 }
 
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-menu-opened a {
   text-decoration: none;
   padding: 0.625rem 1rem;
