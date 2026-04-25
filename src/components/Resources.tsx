@@ -10,14 +10,14 @@ function Resources() {
                     </h2>
                     <div className="h-px w-16 bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400"></div>
                     <p className="text-xl text-gray-600 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
-                        Tools and courses that helped me grow as a developer.
+                        The tools and courses that helped me grow as a developer.
                     </p>
                 </div>
 
                 {/* Resource cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-                    <div className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://scrimba.com/?via=u014nen"
@@ -33,7 +33,7 @@ function Resources() {
                         </p>
                     </div>
 
-                    <div className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf"
@@ -46,7 +46,7 @@ function Resources() {
                         </p>
                     </div>
 
-                    <div className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://appwrite.io/"
@@ -63,7 +63,7 @@ function Resources() {
                         </p>
                     </div>
 
-                    <div className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://go.cap.so/alena"

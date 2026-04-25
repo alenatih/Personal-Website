@@ -678,6 +678,11 @@
   border-top: 1px solid rgba(0, 0, 0, 0.07);
 }
 
+.footer .social-links-container {
+  padding: 0;
+  margin-top: 2rem;
+}
+
 .footer .social-links-container a {
   color: #1d4ed8;
   font-size: 1.5rem;
@@ -688,11 +693,6 @@
   color: #2563eb;
   transform: scale(1.1);
   display: inline-block;
-}
-
-.footer .social-links-container {
-  padding: 0;
-  margin-top: 2rem;
 }
 
 /* Buttons */

@@ -1,7 +1,18 @@
 function Footer() {
     return (
         <footer className="footer">
-            <p className="footer-text">Built with <i className="fa-solid fa-heart"></i> by Alena</p>
+            <div className="flex flex-col items-center gap-4">
+                <p className="footer-text">Built with <i className="fa-solid fa-heart"></i> by Alena</p>
+
+                <a
+                    className="support-link text-sm text-blue-600 dark:text-blue-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors underline"
+                    href="https://boosty.to/alenatih/donate"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    You can support me here if you want.
+                </a>
+            </div>
 
             <div className="social-links-container">
                 <a

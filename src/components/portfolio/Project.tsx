@@ -44,7 +44,7 @@ function Project() {
     return (
         <div className="flex flex-col gap-6 max-w-2xl mx-auto" id={projectId}>
 
-            <div className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6 pb-12 flex flex-col gap-4">
+            <div className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6 pb-12 flex flex-col items-center gap-4">
 
                 <a
                     className="text-2xl tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
@@ -58,7 +58,7 @@ function Project() {
                     {projectInfo.Description}
                 </p>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col md:flex-row items-center gap-4 mt-4">
                     <a
                         className="text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-6 text-sm font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                         href={projectInfo.Link}
