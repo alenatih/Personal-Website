@@ -1,6 +1,6 @@
 function Resources() {
     return (
-        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full">
+        <section className="pt-12 pb-36 px-0 sm:px-0 md:px-12 w-full">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section heading */}
@@ -17,7 +17,9 @@ function Resources() {
                 {/* Resource cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div
+                        className="flex flex-col items-center gap-2 group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 pt-6 pb-12 px-8"
+                    >
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://scrimba.com/?via=u014nen"
@@ -33,7 +35,9 @@ function Resources() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div
+                        className="flex flex-col items-center gap-2 group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 pt-6 pb-12 px-8"
+                    >
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf"
@@ -46,7 +50,9 @@ function Resources() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div
+                        className="flex flex-col items-center gap-2 group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 pt-6 pb-12 px-8"
+                    >
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://appwrite.io/"
@@ -63,7 +69,9 @@ function Resources() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col items-center group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12">
+                    <div
+                        className="flex flex-col items-center gap-2 group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 pt-6 pb-12 px-8"
+                    >
                         <a
                             className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200 transition-colors"
                             href="https://go.cap.so/alena"

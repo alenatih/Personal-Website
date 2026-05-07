@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 
 function PortfolioLayout() {
     return (
-        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 max-w-4xl w-full mx-auto">
+        <section className="pt-12 pb-36 px-0 sm:px-0 md:px-12 max-w-4xl w-full mx-auto">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section heading */}

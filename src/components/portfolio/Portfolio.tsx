@@ -33,7 +33,7 @@ function Portfolio() {
     }
 
     return (
-        <div className="flex flex-col gap-8 max-w-4xl mx-auto w-full">
+        <div className="flex flex-col gap-8 max-w-3xl mx-auto w-full">
             {/* Use slice to create a copy of the array, then reverse it */}
             {projects.slice().reverse().map((project: Project) => {
                 const slug = slugify(project.Title, { lower: true, replacement: "_" })
@@ -47,9 +47,9 @@ function Portfolio() {
                     <NavLink
                         to={`${slug}-${project.$id}`}
                         key={project.$id}
-                        className="group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 p-6 pb-12 no-underline"
+                        className="flex flex-col gap-2 group border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-500 pt-6 pb-12 px-8 no-underline"
                     >
-                        <h3 className="text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-200 transition-colors">
+                        <h3 className="text-center text-lg font-semibold tracking-tight text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-200 transition-colors">
                             {project.Title}
                         </h3>
                         {project.Description && (

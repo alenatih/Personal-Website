@@ -19,11 +19,11 @@ function Contact() {
     const data = useActionData() as ContactActionData
 
     return (
-        <section className="pt-12 pb-36 px-4 sm:px-6 md:px-12 w-full max-w-5xl mx-auto">
+        <section className="pt-12 pb-36 px-0 sm:px-0 md:px-12 w-full max-w-5xl mx-auto">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section heading */}
-                <div className="flex flex-col items-center text-center mb-16 gap-4">
+                <div className="flex flex-col items-center text-center mb-20 gap-4">
                     <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
                         Contact
                     </h2>
@@ -33,7 +33,7 @@ function Contact() {
                 <div className="flex flex-col md:flex-row gap-12">
 
                     {/* Social links */}
-                    <div className="flex flex-col gap-6 md:w-64 flex-shrink-0">
+                    <div className="flex flex-col items-center md:items-start gap-6 md:w-64 flex-shrink-0">
                         <h3 className="text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100">
                             Nice to meet you!
                         </h3>
@@ -79,8 +79,10 @@ function Contact() {
                     </div>
 
                     {/* Contact form */}
-                    <div className="flex-1 border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md p-6 pt-8 pb-12">
-                        <h3 className="text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100 mb-6">
+                    <div
+                        className="flex flex-col flex-1 border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md w-full p-6 pt-8 pb-12 mt-4 md:mt-0"
+                    >
+                        <h3 className="text-center md:text-start text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100 mb-6">
                             Contact me
                         </h3>
 
@@ -121,7 +123,9 @@ function Contact() {
                                     required />
                             </div>
 
-                            <button className="self-start text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-8 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 mt-2">
+                            <button
+                                className="self-center md:self-start text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-8 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 mt-2"
+                            >
                                 Submit
                             </button>
 
