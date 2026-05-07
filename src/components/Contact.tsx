@@ -124,7 +124,7 @@ function Contact() {
                             </div>
 
                             <button
-                                className="self-center md:self-start text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-8 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 mt-2"
+                                className="self-center md:self-start text-gray-800 dark:text-amber-950 bg-amber-200 dark:bg-amber-300 hover:bg-amber-300 dark:hover:bg-amber-200 py-2 px-8 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full md:w-auto mt-2"
                             >
                                 Submit
                             </button>
