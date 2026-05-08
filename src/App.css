@@ -684,13 +684,13 @@
 }
 
 .footer .social-links-container a {
-  color: #1d4ed8;
+  /* color: #1d4ed8; */
   font-size: 1.5rem;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer .social-links-container a:hover {
-  color: #2563eb;
+  /* color: #2563eb; */
   transform: scale(1.1);
   display: inline-block;
 }
@@ -879,13 +879,13 @@ button:disabled {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.dark-mode .footer .social-links-container a {
+/* .dark-mode .footer .social-links-container a {
   color: #3b82f6;
-}
+} */
 
-.dark-mode .footer .social-links-container a:hover {
+/* .dark-mode .footer .social-links-container a:hover {
   color: #60a5fa;
-}
+} */
 
 /* Media queries */
 

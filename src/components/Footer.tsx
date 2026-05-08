@@ -14,6 +14,7 @@ function Footer() {
                     href="https://github.com/alenatih"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
                 >
                     <i className="fa-brands fa-square-github"></i>
                 </a>
@@ -21,6 +22,7 @@ function Footer() {
                     href="https://x.com/Alennushkaa"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
                 >
                     <i className="fa-brands fa-square-x-twitter"></i>
                 </a>
@@ -28,6 +30,7 @@ function Footer() {
                         href="https://www.youtube.com/@alenaatikh"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
                     >
                     <i className="fa-brands fa-square-youtube"></i>
                 </a> */}
@@ -35,6 +38,7 @@ function Footer() {
                     href="https://www.instagram.com/allennushkaa/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
                 >
                     <i className="fa-brands fa-instagram"></i>
                 </a>
@@ -42,6 +46,7 @@ function Footer() {
                     rel="me noopener noreferrer"
                     href="https://mastodon.social/@AlenaTih"
                     target="_blank"
+                    className="text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
                 >
                     <i className="fa-brands fa-mastodon"></i>
                 </a>
