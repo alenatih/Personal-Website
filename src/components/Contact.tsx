@@ -23,7 +23,7 @@ function Contact() {
             <div className="max-w-7xl mx-auto">
 
                 {/* Section heading */}
-                <div className="flex flex-col items-center text-center mb-20 gap-4">
+                <div className="flex flex-col items-center text-center mb-16 md:mb-20 gap-4">
                     <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-amber-50 tracking-wide">
                         Contact
                     </h2>

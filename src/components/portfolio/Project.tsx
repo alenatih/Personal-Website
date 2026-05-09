@@ -45,7 +45,7 @@ function Project() {
         <div className="flex flex-col gap-6 max-w-2xl mx-auto" id={projectId}>
 
             <div
-                className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md pt-8 pb-12 px-8 flex flex-col items-center gap-4"
+                className="border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md pt-8 pb-16 md:pb-18 px-8 flex flex-col items-center gap-4"
             >
 
                 <a
@@ -79,15 +79,15 @@ function Project() {
                     )}
                 </div>
 
-            </div>
+                {projectImageUrl && (
+                    <img
+                        className="w-full rounded-lg shadow-md mt-2 md:mt-6"
+                        src={projectImageUrl.href}
+                        alt={projectInfo.Title}
+                    />
+                )}
 
-            {projectImageUrl && (
-                <img
-                    className="w-full rounded-lg shadow-md"
-                    src={projectImageUrl.href}
-                    alt={projectInfo.Title}
-                />
-            )}
+            </div>
 
         </div>
     )
