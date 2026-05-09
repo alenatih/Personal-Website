@@ -80,7 +80,7 @@ function Contact() {
 
                     {/* Contact form */}
                     <div
-                        className="flex flex-col flex-1 border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md w-full p-6 pt-8 pb-12 mt-4 md:mt-0"
+                        className="flex flex-col flex-1 border-t-2 border-t-amber-300 dark:border-t-amber-600 bg-white/80 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md w-full p-6 pt-8 pb-14 mt-4 md:mt-0"
                     >
                         <h3 className="text-center md:text-start text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100 mb-6">
                             Contact me
