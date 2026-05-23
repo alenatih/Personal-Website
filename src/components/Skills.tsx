@@ -1,6 +1,6 @@
 const skills = [
     "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js",
-    "RESTful APIs", "Git", "GitHub", "React Router", "Vite", "Vercel",
+    "RESTful APIs", "Git", "GitHub", "React Router", "Vite", "Vercel", "Claude Code",
     "Appwrite", "PostgreSQL", "Supabase", "Firebase",
     "React Testing Library", "Vitest", "Playwright", "WebdriverIO",
     "Tailwind CSS", "Figma",
