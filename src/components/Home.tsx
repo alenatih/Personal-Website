@@ -18,7 +18,7 @@ function Home() {
                     <span className="bg-clip-text text-transparent bg-gradient-to-br from-amber-600 to-amber-800 dark:from-amber-400 dark:to-amber-600">
                         Tikhomirova,
                     </span>
-                    <span className="block">a creative Frontend engineer</span>
+                    <span className="block">a creative Software engineer</span>
                 </h2>
                 <div className="h-px bg-gradient-to-r from-amber-400 via-amber-300 to-transparent dark:from-amber-500 dark:via-amber-400 w-20 md:w-40 mt-4"></div>
             </div>
@@ -36,7 +36,7 @@ function Home() {
                 <div className="flex flex-col items-center md:items-start gap-4 max-w-2xl w-full mt-8 md:mt-0">
 
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400 text-center md:text-left">
-                        Frontend Engineer. Building things.
+                        Software Engineer. Building things.
                         On my journey to becoming a solo entrepreneur. Doing what I love.
                     </p>
 
@@ -62,7 +62,7 @@ function Home() {
                     </p>
 
                     <p className="text-base leading-relaxed text-amber-700 dark:text-amber-400 font-medium text-center md:text-left mt-8">
-                        I'm open for Frontend engineer roles in a company or startup.
+                        I'm open for software engineer roles in a company or startup.
                     </p>
 
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400 text-center md:text-left">

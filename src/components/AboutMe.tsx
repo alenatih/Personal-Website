@@ -34,7 +34,10 @@ function AboutMe() {
                             React, Next.js, RESTful APIs, Git, GitHub, React Router, Vite, Vercel,
                             Appwrite, PostgreSQL, Supabase, Firebase, React Testing Library, Vitest, Playwright, WebdriverIO,
                             Tailwind CSS, and Figma. */}
-                            Frontend Engineer. Building things.
+                            A software engineer with the focus on Frontend, in love with art and design, 
+                            but who values the fundamentals, constantly learns new things, and have skills 
+                            in marketing from the previous career. 
+                            Building things.
                             On my journey to becoming a solo entrepreneur. Doing what I love.
                         </p>
                         <p className="text-base leading-relaxed">
