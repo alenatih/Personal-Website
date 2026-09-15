@@ -85,6 +85,8 @@ function RootLayout() {
                                 <NavLink to="/" onClick={toggleMobileMenu}>Home</NavLink>
                                 <NavLink to="/aboutme" onClick={toggleMobileMenu}>About me</NavLink>
                                 <NavLink to="/portfolio" onClick={toggleMobileMenu}>Portfolio</NavLink>
+                                {/* <NavLink to="/marketing-portfolio" onClick={toggleMobileMenu}>Marketing</NavLink> */}
+                                {/* <NavLink to="/teaching" onClick={toggleMobileMenu}>Tutoring</NavLink> */}
                                 <NavLink to="/skills" onClick={toggleMobileMenu}>Skills</NavLink>
                                 <NavLink to="/blog" onClick={toggleMobileMenu}>Blog</NavLink>
                                 <NavLink to="/resources" onClick={toggleMobileMenu}>Resources</NavLink>
@@ -99,6 +101,8 @@ function RootLayout() {
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="/aboutme">About me</NavLink>
                             <NavLink to="/portfolio">Portfolio</NavLink>
+                            {/* <NavLink to="/marketing-portfolio">Marketing</NavLink> */}
+                            {/* <NavLink to="/teaching">Tutoring</NavLink> */}
                             <NavLink to="/skills">Skills</NavLink>
                             <NavLink to="/blog">Blog</NavLink>
                             <NavLink to="/resources">Resources</NavLink>

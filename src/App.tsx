@@ -16,6 +16,8 @@ import Home from "./components/Home.tsx"
 import AboutMe from "./components/AboutMe.tsx"
 import Portfolio, { projectsLoader } from "./components/portfolio/Portfolio.tsx"
 import Project, { projectInfoLoader } from "./components/portfolio/Project.tsx"
+import MarketingPortfolio from "./components/MarketingPortfolio.tsx"
+import Teaching from "./components/Teaching.tsx"
 import Skills from "./components/Skills.tsx"
 import Resources from "./components/Resources.tsx"
 import Blog, { blogPostsLoader } from "./components/blog/Blog.tsx"
@@ -91,6 +93,8 @@ const router = createBrowserRouter(
           loader={projectInfoLoader}
         />
       </Route>
+      <Route path={ROUTE.marketingPortfolio} element={<MarketingPortfolio />} />
+      <Route path={ROUTE.teaching} element={<Teaching />} />
       <Route path={ROUTE.skills} element={<Skills />} />
       <Route path={ROUTE.blog} element={<BlogLayout />} errorElement={<BlogError />}>
         <Route
